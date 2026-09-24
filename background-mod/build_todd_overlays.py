@@ -92,7 +92,8 @@ def main():
     assert actual[y+h-40:y+h,x].all(), 'Old left border retained'
   Image.fromarray((actual*255).astype('uint8')).save(out/f'todd-changed-mask-{n}.png')
   reports.append(dict(file=name,changed_blocks=changed,alpha_preserved=True,protected_object_pixels_identical=True,untouched_blocks_identical=True,hatch_border_checks_passed=n=='00',regions=records))
- for state,labels in {'closed':['hatch-closed','door','todd-body','todd-head'],'open':['hatch-open','cabinet-open','small-cabinet','todd-body','todd-head']}.items():
+ for state,labels in {'closed':['hatch-closed','door','todd-body','todd-head'],'open':['hatch-open','cabinet-open','small-cabinet','todd-body','todd-head'],
+                      'fridge-only':['cabinet-open']}.items():
   preview=Image.fromarray(art).convert('RGBA')
   for label in labels:
    im,sx,sy=sprites[label];p=Image.fromarray(im);p=p.resize((round(p.width/2),round(p.height/2)),Image.Resampling.LANCZOS);preview.alpha_composite(p,(sx,sy))

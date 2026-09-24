@@ -45,5 +45,11 @@ def main():
     base.paste(result,box[:2]);base.save(dest);result.save(review/'fixed.png')
     cfg=json.loads(cfgpath.read_text());cfg['protected']=[]
     cfgpath.write_text(json.dumps(cfg,indent=2)+'\n')
+    # These state sprites contain parts of the same signs and wall. Updating
+    # only the room creates a visible split when the refrigerator opens.
+    from build_custom import build
+    from build_todd_overlays import main as build_states
+    build('023-todds')
+    build_states()
 
 if __name__=='__main__':main()

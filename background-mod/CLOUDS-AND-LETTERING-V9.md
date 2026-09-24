@@ -49,3 +49,14 @@ including cloud patches, with a 64 MiB peak and successful eviction/reload and
 invalid-hash rejection.
 
 Restart both game and helper to load the new animation catalog.
+
+## Open refrigerator follow-up
+
+The lettering build initially left Todd's existing object atlases stale. Opening
+the refrigerator drew older sign/wall pixels over the new room, splitting the
+lettering at the state boundary. Both atlases have been refreshed from the
+packed room preview. Original alpha, guarded object pixels and untouched blocks
+pass equality checks. Open/closed and fridge-only packed composites are produced
+by `build_todd_overlays.py`. The lettering integration now rebuilds the room and
+its object atlases together, preventing this omitted dependency. Gameplay was
+not launched for this follow-up.
