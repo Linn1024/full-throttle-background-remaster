@@ -1,0 +1,13 @@
+{
+  "mode": "built-in image_gen",
+  "prompts": [
+    {
+      "key": "reels",
+      "prompt": "Edit target image 1, a sprite sheet of SEVEN projector reel animation frames in a 4-column 2-row grid, last slot empty. Preserve EXACT layout, framing, perspective, object positions and different hole positions in each frame. Redraw metal to match style reference image 2: maintained machined metal with subtle concentric grooves, satin warm dark gray face, fine edge highlights and film strip detail. Each of the seven frames must use identical material, color, light and detail scale, with only original hole and hanging film positions differing. Keep every frame's original hole count and positions EXACT. Do not invent spokes, extra holes, objects, frames or text. Don't move anything. Keep dark palette and original background. Target full sheet same aspect and grid."
+    },
+    {
+      "key": "levers",
+      "prompt": "Edit target image 1: six adjacent 240x768 strips showing alternate lever states of the same projector. Keep EXACT six-strip grid layout, all original lever positions, knob sizes, slot lengths, frame boundaries and geometry. Improve material and edges to match projector cabinet in style reference image 2: satin dark charcoal metal, fine restrained scratches, warm copper slot edging, teal round handles with subtle wear and careful rim highlights. All states must match identically in material, brightness, light and texture. No added objects, labels, controls, fasteners or extra slots. Retain original dark palette. Repaint the six original strips in place."
+    }
+  ]
+}
