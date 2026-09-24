@@ -18,6 +18,21 @@ def texture_identity(raw):
                 fingerprint=':'.join(hashlib.sha256(raw[o:o+32]).hexdigest()
                                      for o in (0,len(raw)//2,len(raw)-32)))
 
+def validate_overlay_alpha(original, custom, report):
+    if report.get('alpha_preserved'):
+        assert (original[:,:,3]==custom[:,:,3]).all()
+        return
+    # Explicit reviewed removal of duplicate fixed scenery, never new opacity.
+    assert report.get('scenery_alpha_removed') and report['file'] in (
+        '018-mo-shack_room_pk_a01.dxt','018-mo-shack_room_pk_a02.dxt')
+    before=original[:,:,3];after=custom[:,:,3]
+    assert (after<=before).all()
+    assert hashlib.sha256(after.tobytes()).hexdigest()==report['custom_alpha_sha256']
+    changed=before!=after
+    for x0,y0,x1,y1 in report['alpha_change_bounds']:
+        changed[y0:y1,x0:x1]=False
+    assert not changed.any(), 'Alpha edit outside reviewed scenery bounds'
+
 def installed_dumpster_sources():
     """Read legacy on-disk replacements as recognition aliases, never outputs."""
     entries=json.loads((ROOT/'manifest.json').read_text())
@@ -90,14 +105,13 @@ def prepare():
         folder=report_path.parent
         room=folder.parent.name
         for report in json.loads(report_path.read_text()):
-            assert report['alpha_preserved']
             name=report['file']
             original_path=ROOT/'original'/report.get('source',f'rooms/{room}/{name}')
             custom_path=folder/name
             before,raw,im=read_dxt(original_path)
             after,newraw,newim=read_dxt(custom_path)
             assert before[:12]==after[:12] and len(raw)==len(newraw)
-            assert (im[:,:,3]==newim[:,:,3]).all()
+            validate_overlay_alpha(im,newim,report)
             item=dict(name=f'{room}/{original_path.stem}',width=im.shape[1],
                       height=im.shape[0],size=len(raw))
             for mode,content in [('official',raw),('custom',newraw)]:

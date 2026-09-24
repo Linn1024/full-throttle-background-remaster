@@ -61,3 +61,23 @@ and all pixels outside changed compression blocks. The neighboring white mask
 cell is excluded from the offline sprite preview, as it is not rendered by that
 sprite's UV region. Cache refreshed; this remains an offline validation and does
 not establish that all in-game animation states are free of seams.
+
+## Coverage correction (v7)
+
+The user still saw joins after v6. The session log confirms a00/a01/a02 were
+matched in Custom mode, ruling out an unrecognized old atlas. Copying the fixed
+porch into independently compressed/scaled sprites continued to produce a
+texture transition. V7 removes duplicate fixed-porch coverage from the raised
+sprite and the separate fixed railing sprite. The existing background supplies
+that scenery directly. Moving-deck and rope coverage is retained with a narrow
+edge transition. This supersedes the earlier requirement to preserve *all*
+scenery alpha: the correction intentionally reduces alpha in reviewed regions.
+
+`fix_shack_coverage_v7.py` runs after v6. It preserves every RGB compression
+block and refuses any encoded alpha block that increases original opacity.
+Controls and pixels outside the recorded bounds remain protected. Cache
+preparation now validates the explicit two-atlas exception using decreasing
+opacity, reviewed bounds and the expected alpha hash. Other atlas alpha checks
+remain exact. The packed two-layer composite is at
+`reviews/shack-joins-v7/packed-composite.png`. Game was not launched; actual
+rendering still needs verification.
