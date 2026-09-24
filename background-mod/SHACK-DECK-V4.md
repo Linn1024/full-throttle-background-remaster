@@ -31,3 +31,17 @@ lighting to the official crop and retains the new material detail.
 Checks: original alpha is identical; all pixels outside modified BC3 blocks are
 identical to the pre-fix atlas. Inspected the decoded packed output at
 `reviews/shack-deck-v4/deck-packed.png`. Cache refreshed offline; no game launch.
+
+## Shared porch seam follow-up
+
+The raised sprite also contains fixed porch boards. The independent generated
+crop gave those boards a different texture and orange lighting at the sprite's
+left boundary. `fix_shack_seam_v5.py` copies the registered main background into
+that shared porch polygon, retaining the moving platform and both lifting ropes.
+Run it after the v4 deck builder and before refreshing the cache. Its local
+pre-fix backup is `reviews/shack-seam-v5/before.dxt`.
+
+Original alpha, rope pixels and all unedited BC3 blocks pass equality checks.
+The actual compressed sprite is inspected against its neighbor in
+`reviews/shack-seam-v5/packed-composite.png`. No new generation was needed;
+this is registration of existing approved artwork. Gameplay remains unverified.
