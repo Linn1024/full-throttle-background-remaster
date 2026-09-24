@@ -69,6 +69,12 @@ function matches(data, size, width, height) {
             if (v[mode].fingerprint !== fingerprint) continue;
             if (sha(data,size) === v[mode].sha256) return {variant:v,mode};
         }
+        // Older archive-installed custom textures are input identities only.
+        // F6/F7 still upload the verified official/current-custom payloads.
+        for (const alias of (v.aliases || [])) {
+            if (alias.fingerprint === fingerprint && sha(data,size) === alias.sha256)
+                return {variant:v,mode:'installed'};
+        }
     }
     return null;
 }

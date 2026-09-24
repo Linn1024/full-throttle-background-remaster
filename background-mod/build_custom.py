@@ -10,8 +10,8 @@ from scene_assets import ROOT, ROOM, SIZE, read_chunk, render, triangle_pixels
 
 OUT = ROOT / 'custom-v1'
 TEXCONV = ROOT / 'tools/texconv.exe'
-# Scene-space rectangle retaining the official General Surplus sign.
-PROTECTED = [(1730, 214, 2080, 442)]
+# Both dumpster lettering and the General Surplus sign now use reviewed art.
+PROTECTED = []
 
 def build(location=None):
     artwork_crop = None

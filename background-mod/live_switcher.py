@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import json
 import os
+import struct
 from pathlib import Path
 import sys
 import time
@@ -12,8 +13,38 @@ from scene_assets import ROOT, ROOM, read_chunk, read_dxt
 
 LIVE = ROOT / 'live-switcher'
 
+def texture_identity(raw):
+    return dict(sha256=hashlib.sha256(raw).hexdigest(),
+                fingerprint=':'.join(hashlib.sha256(raw[o:o+32]).hexdigest()
+                                     for o in (0,len(raw)//2,len(raw)-32)))
+
+def installed_dumpster_sources():
+    """Read legacy on-disk replacements as recognition aliases, never outputs."""
+    entries=json.loads((ROOT/'manifest.json').read_text())
+    wanted={f'rooms/010-dumpster/010-dumpster-layer{n}.chnk' for n in (10,20,30,40)}
+    result={}
+    with (ROOT.parent/'full.data').open('rb') as archive:
+        header=archive.read(48)
+        assert header[:4]==b'KAPL'
+        start=struct.unpack_from('<I',header,20)[0]
+        length=archive.seek(0,2)
+        for entry in entries:
+            if entry['name'] not in wanted:continue
+            archive.seek(entry['entry_offset'])
+            offset,_,size,size2,flags=struct.unpack('<Q4I',archive.read(24))
+            assert size==size2 and flags==0 and start+offset+size<=length
+            archive.seek(start+offset);data=archive.read(size)
+            original=ROOT/'original'/entry['name']
+            if data==original.read_bytes():continue
+            path=LIVE/('installed-'+original.name);path.write_bytes(data)
+            source=read_chunk(path);official=read_chunk(original)
+            assert source['header']==official['header'], 'Installed room geometry changed'
+            result[original.name]=source
+    return result
+
 def prepare():
     LIVE.mkdir(exist_ok=True)
+    installed=installed_dumpster_sources()
     textures=[]
     assets=[(ROOM/f'010-dumpster-layer{layer}.chnk',ROOT/'custom-v1'/f'010-dumpster-layer{layer}.chnk')
             for layer in (10,20,30,40)]
@@ -46,6 +77,12 @@ def prepare():
                 item[mode]=dict(path=str(path),sha256=hashlib.sha256(raw).hexdigest(),
                                fingerprint=':'.join(hashlib.sha256(raw[o:o+32]).hexdigest()
                                for o in (0,len(raw)//2,len(raw)-32)))
+            if name in installed:
+                source=installed[name]['textures'][i]
+                assert source['image'].size==tex['image'].size and len(source['raw'])==item['size']
+                alias=texture_identity(source['raw'])
+                if alias['sha256'] not in (item['official']['sha256'],item['custom']['sha256']):
+                    item['aliases']=[alias]
             textures.append(item)
     # Room object atlases can contain opaque scenery behind animated objects.
     # Include only explicitly built and validated replacements.
@@ -73,10 +110,11 @@ def prepare():
     # Hash identification must never map identical input textures to different art.
     seen={}
     for item in textures:
-        key=item['official']['sha256']
-        value=item['custom']['sha256']
-        assert key not in seen or seen[key]==value, 'Ambiguous texture replacement'
-        seen[key]=value
+        value=(item['official']['sha256'],item['custom']['sha256'])
+        for identity in [item['official'],item['custom'],*item.get('aliases',[])]:
+            key=identity['sha256']
+            assert key not in seen or seen[key]==value, 'Ambiguous texture replacement'
+            seen[key]=value
     config=dict(textures=textures,initial='custom',rooms=rooms,cache_mib=64)
     (LIVE/'textures.json').write_text(json.dumps(config,indent=2))
     return config
