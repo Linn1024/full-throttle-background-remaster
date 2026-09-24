@@ -8,18 +8,5 @@
     "056-arena-layer10.chnk",
     "056-arena-layer20.chnk"
   ],
-  "protected": [
-    [
-      0,
-      0,
-      2220,
-      230
-    ],
-    [
-      460,
-      160,
-      900,
-      385
-    ]
-  ]
+  "protected": []
 }

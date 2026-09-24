@@ -1,0 +1,314 @@
+{
+  "backgrounds": [
+    {
+      "room": "056-arena",
+      "generated_file": "exec-222a17c9-805d-4524-8586-d0c3ca06967a.png",
+      "reference": "locations/056-arena/official-remaster.png",
+      "request_summary": "Faithful detailed hand-painted redraw; retain full frame, camera geometry, signs, colors and all object positions."
+    },
+    {
+      "room": "057-demowall",
+      "generated_file": "exec-932384b9-7350-4782-9181-535a40d4fffc.png",
+      "reference": "locations/057-demowall/official-remaster.png",
+      "request_summary": "Faithful detailed hand-painted redraw; retain full frame, camera geometry, signs, colors and all object positions."
+    },
+    {
+      "room": "058-derbycar",
+      "generated_file": "exec-64c5357d-9985-49ff-aa7e-dc039057c591.png",
+      "reference": "locations/058-derbycar/official-remaster.png",
+      "request_summary": "Faithful detailed hand-painted redraw; retain full frame, camera geometry, signs, colors and all object positions."
+    },
+    {
+      "room": "059-rips-box",
+      "generated_file": "exec-eab3651a-f0c5-46e6-8413-c6a77aef61f4.png",
+      "reference": "locations/059-rips-box/official-remaster.png",
+      "request_summary": "Faithful detailed hand-painted redraw; retain full frame, camera geometry, signs, colors and all object positions."
+    },
+    {
+      "room": "096-demoderb",
+      "generated_file": "exec-21b155f4-bc38-45b3-80e5-f10e9594623e.png",
+      "reference": "locations/096-demoderb/official-remaster.png",
+      "request_summary": "Faithful detailed hand-painted redraw; retain full frame, camera geometry, signs, colors and all object positions."
+    },
+    {
+      "room": "142-derbypit",
+      "generated_file": "exec-af2c187f-f8bc-4ea6-b062-1c3401920f9a.png",
+      "reference": "locations/142-derbypit/official-remaster.png",
+      "request_summary": "Faithful detailed hand-painted redraw; retain full frame, camera geometry, signs, colors and all object positions."
+    }
+  ],
+  "initial_car_pages": [
+    {
+      "id": 1,
+      "generated_file": "exec-b22ce1a0-0629-4f03-9ed1-0f2407defa43.png"
+    },
+    {
+      "id": 2,
+      "generated_file": "exec-2b9fa5e1-7b35-4a3d-ab38-ce8a1964d675.png"
+    }
+  ],
+  "generations": [
+    {
+      "record": "generation-03.json",
+      "id": 3,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the red number 5 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-42ae046f-6a6d-4956-85b7-1a072a0f70d3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-04.json",
+      "id": 4,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the red number 5 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-5a021ee6-ee6d-4086-afc5-5a56d3cff28e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-05.json",
+      "id": 5,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the blue number 42 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-081ac66e-7386-4aab-b51e-9ae36ae5fed7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-056-arena.json",
+      "room": "056-arena",
+      "prompt": "Repaint the COLORED ARTWORK ONLY in this exact Full Throttle game object atlas. Leave every white/gray control silhouette untouched. Preserve ALL patch/frame positions, sizes, shapes and orientations exactly. These colored pieces show an industrial demolition arena wall hatch with yellow black chevrons, wall metal/concrete, and a raised prize platform with dark structural metal, handrails and purple stadium lights. Improve their materials to finely detailed polished hand-painted adventure game artwork with weathered concrete, scratched metal and defined painted lighting. Copy every animation pose exactly without moving or changing silhouettes. No crop or rearrangement or added objects. Keep background as reference, full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-d7443b79-216e-4daa-9389-b199b0f1729f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-057-demowall.json",
+      "room": "057-demowall",
+      "prompt": "Repaint the COLORED ARTWORK ONLY in this exact Full Throttle game object atlas. Leave every white/gray control silhouette untouched. Preserve ALL patch/frame positions, sizes, shapes and orientations exactly. These colored pieces show an industrial demolition arena wall hatch with yellow black chevrons, wall metal/concrete, and a raised prize platform with dark structural metal, handrails and purple stadium lights. Improve their materials to finely detailed polished hand-painted adventure game artwork with weathered concrete, scratched metal and defined painted lighting. Copy every animation pose exactly without moving or changing silhouettes. No crop or rearrangement or added objects. Keep background as reference, full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-b5ab5a49-cc5a-4ada-816c-4a3fffa65bbc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-06.json",
+      "id": 6,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the blue number 42 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-7f6fe137-fd61-4cf1-b9d6-7f7c74b60969.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-09.json",
+      "id": 9,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the yellow number 5 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-bb5a6b0d-d880-4573-86c8-2f882d9bdc38.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-10.json",
+      "id": 10,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the yellow number 5 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-a491d1ce-2546-46f6-aab7-0b37274e102f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-100.json",
+      "id": 100,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-6267819b-9999-4281-9897-3d9b0fdcd13a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-104.json",
+      "id": 104,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-f61fcded-41b9-4850-b7d6-23a0dc41f89b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-105.json",
+      "id": 105,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-9702782b-9383-4bc5-897d-714b3d348c79.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-106.json",
+      "id": 106,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-5eee3b2f-f1c6-46fc-b5ce-30c5a58272bd.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-107.json",
+      "id": 107,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-15fd7dd7-c576-4bc3-b8e9-64105c74ca65.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-108.json",
+      "id": 108,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-c58da39d-74a5-4e3f-82e7-d21b0c5764b5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-109.json",
+      "id": 109,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-cf24dcc6-7ecf-4496-a169-1f0bfa4e3cc8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-11.json",
+      "id": 11,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the orange number 11 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-76bc5b87-348d-4bea-9e1a-5d652d78cb4e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-110.json",
+      "id": 110,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-4513fd07-f684-4942-924c-2c307bd19720.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-111.json",
+      "id": 111,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-7c6b23e4-6cb4-4aa1-a172-d3299a4778a8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-112.json",
+      "id": 112,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-15e189ca-a432-43d1-87cc-99f343866cb8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-113.json",
+      "id": 113,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-eef34dab-9681-4ef5-8bfb-2f4300d31b0d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-114.json",
+      "id": 114,
+      "prompt": "Refine this EXACT Full Throttle fire-animation atlas with polished hand-painted flame interior detail. Retain the exact full image aspect ratio and EVERY flame/frame position, dimensions, outer silhouette, orientation and ember. Do not rearrange, crop, add or remove any frame. Improve yellow/orange flame shading with luminous pale yellow cores, layered gold/orange tongues and subtle painted glow, same original palette and brightness, consistent art style across ALL frames. Keep existing transparency/background. This is a replacement texture for existing animation: layout must remain EXACT. Maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-9fdc09c7-6534-471f-8278-d8748e02108e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-12.json",
+      "id": 12,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the orange number 11 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-c18ff138-ff6a-46f6-bcab-2d38369de3d9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-13.json",
+      "id": 13,
+      "prompt": "Repaint this exact fire animation sprite atlas for Full Throttle with polished hand-painted flame detail. Retain EXACT layout, number of frames, positions, sizes and outer silhouettes, every ember and flame tip in place. Improve orange and gold flame shading with fluid layered painted flame interiors, luminous yellow cores and crisp flame tongues. Same frame timing silhouettes and original brightness; no smoke or new objects. No crop, no rearranging, no background change, full atlas highest resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-5b17972c-615f-4552-a3f4-2d5d12614de1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-14.json",
+      "id": 14,
+      "prompt": "Repaint this exact fire animation sprite atlas for Full Throttle with polished hand-painted flame detail. Retain EXACT layout, number of frames, positions, sizes and outer silhouettes, every ember and flame tip in place. Improve orange and gold flame shading with fluid layered painted flame interiors, luminous yellow cores and crisp flame tongues. Same frame timing silhouettes and original brightness; no smoke or new objects. No crop, no rearranging, no background change, full atlas highest resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-25b9c253-586f-4e2e-b432-0081ca7366ab.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-15.json",
+      "id": 15,
+      "prompt": "Repaint this exact fire animation sprite atlas for Full Throttle with polished hand-painted flame detail. Retain EXACT layout, number of frames, positions, sizes and outer silhouettes, every ember and flame tip in place. Improve orange and gold flame shading with fluid layered painted flame interiors, luminous yellow cores and crisp flame tongues. Same frame timing silhouettes and original brightness; no smoke or new objects. No crop, no rearranging, no background change, full atlas highest resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-0bd88bf5-812f-42c2-9b86-8d27995e1342.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-16.json",
+      "id": 16,
+      "prompt": "Repaint this exact fire animation sprite atlas for Full Throttle with polished hand-painted flame detail. Retain EXACT layout, number of frames, positions, sizes and outer silhouettes, every ember and flame tip in place. Improve orange and gold flame shading with fluid layered painted flame interiors, luminous yellow cores and crisp flame tongues. Same frame timing silhouettes and original brightness; no smoke or new objects. No crop, no rearranging, no background change, full atlas highest resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-6ecf3b7b-7eeb-4edf-b084-b4a426bb2a5f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-17.json",
+      "id": 17,
+      "prompt": "Repaint this exact fire animation sprite atlas for Full Throttle with polished hand-painted flame detail. Retain EXACT layout, number of frames, positions, sizes and outer silhouettes, every ember and flame tip in place. Improve orange and gold flame shading with fluid layered painted flame interiors, luminous yellow cores and crisp flame tongues. Same frame timing silhouettes and original brightness; no smoke or new objects. No crop, no rearranging, no background change, full atlas highest resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-8ed07f72-7c37-486a-8ab4-3f8e202d7eb9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-18.json",
+      "id": 18,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the red number 5 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-86637d92-9e92-4e38-b217-9f7f07df1292.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-19.json",
+      "id": 19,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the red number 5 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-27a778d4-7c01-49d4-9601-f44b509c04b5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-20.json",
+      "id": 20,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the red number 5 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-785e423e-bdbf-4f76-b54c-dbb9322e85ce.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-30.json",
+      "id": 30,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the yellow number 5 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-6e2fd87e-903b-4331-83f1-96b84c2dbbb4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-31.json",
+      "id": 31,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the yellow number 5 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-e66ef020-10e1-41e9-bddd-28e1ef81fb28.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-32.json",
+      "id": 32,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the yellow number 5 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-be52f7d4-0e68-4bf2-bac4-8bd62827c4e1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-34.json",
+      "id": 34,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the blue number 42 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-509c1e62-36d2-4e09-bf79-b3abe35ee986.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-35.json",
+      "id": 35,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the blue number 42 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-8c0032b4-6f1d-45eb-853d-c02a94ea436d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-36.json",
+      "id": 36,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the blue number 42 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-8d6afeb3-af44-44c2-a1ae-5be585186f06.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-38.json",
+      "id": 38,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the green number 21 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-775c7f3f-836e-41c0-9189-327f7db2e636.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-39.json",
+      "id": 39,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the green number 21 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-1ceafd02-43a5-4daa-8fd1-b4f68656560a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-40.json",
+      "id": 40,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the green number 21 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-9a1e5676-4d3d-4b8e-b029-f189f9bca1bb.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-50.json",
+      "id": 50,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the orange number 11 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-7f95c251-5cf5-4679-83b8-6b68bdbcddb9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-51.json",
+      "id": 51,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the orange number 11 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-0deb1592-e081-4db8-8565-2494176fb4a7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-52.json",
+      "id": 52,
+      "prompt": "Repaint this EXACT game sprite atlas with more detailed polished hand-painted Full Throttle adventure game graphics. Maintain EVERY car's exact position, size, orientation, perspective and outer silhouette and identical atlas layout. These are the orange number 11 derby car's animation angles: preserve original stripes, numbers, sponsor decals, silver roll cage, dark windows and black rubber bumpers. Improve the paint finish with fine chips and scratches, controlled highlights, metal definition and rubber texture, coherent original painted style; same body color and consistent lighting on all frames. ALL frames must remain present in exactly the same places. Black shadow silhouettes unchanged. Do not add, rearrange, crop or zoom. Background remains as reference. Full atlas maximum resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-08319081-5deb-47ba-9f5e-cf1cff36f6c7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-corley-sign.json",
+      "prompt": "Redraw this exact narrow yellow weathered advertising sign sharply and beautifully for a hand-painted industrial adventure game. The lettering MUST read exactly: CAN'T BEAT A CORLEY. Black bold condensed vintage block letters, clear B in BEAT and O in CORLEY; no misspellings. Preserve exact long rectangular sign placement, yellow/ochre paint, thin orange raised frame, perspective and surrounding margin from reference. Original industrial lighting, slight wear but fully readable lettering. No added text or symbols, no crop. Entire wide aspect ratio identical, high resolution.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-aa8e8a04-384b-43ee-88d3-e16faa8a6ed6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "record": "generation-monitors.json",
+      "prompt": "Redraw this exact animation atlas of green CRT screen graphics. It contains sixteen frame cells arranged as two columns by eight rows; EACH CELL has three separated green quadrilateral monitors at fixed positions on black. Preserve the exact 1440x960 aspect ratio, layout, each monitor silhouette and corner positions, sizes and every frame's existing radar circle/static-noise state. Improve the coarse green blobs into refined hand-painted retro CRT static texture and crisp concentric radar rings, soft phosphor glow and fine subtle scanlines. Same olive green palette, moderate brightness. No monitor housings, no text, no added objects, no rearrangement, no crop or zoom. Maintain all 48 green patches exactly in place and black background.",
+      "output_hint": "Generated images are saved to C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c as C:\\Users\\linn1\\.codex\\generated_images\\01a0cd70-1192-7f73-919f-7322a0c4973c\\exec-652f520e-c415-4d88-a408-7526b810d063.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}
