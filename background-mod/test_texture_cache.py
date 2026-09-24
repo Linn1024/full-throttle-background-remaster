@@ -32,6 +32,15 @@ def main():
                     releasePayload(p);loads++;peak=Math.max(peak,cacheBytes);
                     if(cacheBytes>cacheLimit)throw new Error('Cache exceeded its bound');
                 }
+                for(const track of (v.animation?.tracks || [])) {
+                    for(const frame of track.frames) {
+                        const patch={name:v.name,size:frame.size,custom:frame};
+                        const p=acquirePayload(patch,'custom');
+                        if(sha(p.memory,p.length)!==frame.sha256)throw new Error('Cloud patch changed');
+                        releasePayload(p);loads++;peak=Math.max(peak,cacheBytes);
+                        if(cacheBytes>cacheLimit)throw new Error('Cloud cache exceeded its bound');
+                    }
+                }
             }
             if(sha(pinned.memory,pinned.length)!==fingerprint)throw new Error('Pinned payload evicted');
             releasePayload(pinned);

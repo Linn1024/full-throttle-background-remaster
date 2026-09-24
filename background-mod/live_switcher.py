@@ -129,6 +129,26 @@ def prepare():
             key=identity['sha256']
             assert key not in seen or seen[key]==value, 'Ambiguous texture replacement'
             seen[key]=value
+    animation_path=ROOT/'reviews/cloud-cycles-v9/manifest.json'
+    if animation_path.exists():
+        by_name={v['name']:v for v in textures}
+        for animation in json.loads(animation_path.read_text()):
+            item=by_name[animation['name']]
+            assert animation['base_sha256']==item['custom']['sha256'], 'Rebuild cloud animation after changing its base art'
+            occupied=set()
+            for track in animation['tracks']:
+                assert track['step_ms']>0 and len(track['frames'])==track['end']-track['start']+1
+                expected=sum(length for _,length in track['runs'])
+                for at,length in track['runs']:
+                    assert at>=0 and at%8==0 and length>0 and length%8==0 and at+length<=item['size']
+                    blocks=set(range(at,at+length,8))
+                    assert not occupied.intersection(blocks), 'Overlapping cloud tracks'
+                    occupied.update(blocks)
+                for frame in track['frames']:
+                    data=Path(frame['path']).read_bytes()
+                    assert len(data)==expected==frame['size']
+                    assert hashlib.sha256(data).hexdigest()==frame['sha256']
+            item['animation']=animation
     config=dict(textures=textures,initial='custom',rooms=rooms,cache_mib=64)
     (LIVE/'textures.json').write_text(json.dumps(config,indent=2))
     return config

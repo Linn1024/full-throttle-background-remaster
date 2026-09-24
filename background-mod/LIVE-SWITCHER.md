@@ -24,6 +24,11 @@ The helper now loads compressed texture payloads on demand into a 64 MiB cache i
 
 ## Helper files
 
+Custom mode can now animate the red murder-sequence clouds and Corville's sky
+using reconstructed classic palette cycles. See [scope, build steps and timing
+limitations](CLOUDS-AND-LETTERING-V9.md). Official mode remains static. Restart
+both game and helper after preparing the new catalog.
+
 - `live_switcher.py`: launcher, texture-pair preparation and helper lifecycle.
 - `live_switcher.js`: process-local OpenGL hooks and hotkeys.
 - `live-switcher/session.log`: diagnostic events for the latest session.

@@ -7,12 +7,5 @@
   "layers": [
     "023-todds-layer40.chnk"
   ],
-  "protected": [
-    [
-      680,
-      365,
-      875,
-      555
-    ]
-  ]
+  "protected": []
 }

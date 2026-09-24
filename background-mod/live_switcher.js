@@ -121,6 +121,44 @@ function installDelete(address) {
         for(let i=0;i<n;i++)tracked.delete(args[1].add(i*4).readU32());
     }});
 }
+function cycleSteps(animation,elapsed) {
+    return animation.tracks.map(t=>Math.floor(Math.max(0,elapsed)/t.step_ms)%t.frames.length);
+}
+function updateClouds(now) {
+    if(choice!=='custom')return;
+    for(const r of tracked.values()) {
+        const v=r.variant,a=v.animation;
+        if(!a || r.mode!=='custom' || !r.lastUsed || now-r.lastUsed>250 || r.context!==gl.context().toString())continue;
+        if(!gl.isTexture(r.id)){tracked.delete(r.id);continue;}
+        if(r.cycleStart===undefined)r.cycleStart=now;
+        const steps=cycleSteps(a,now-r.cycleStart);
+        if(r.cycleSteps && steps.every((s,i)=>s===r.cycleSteps[i]))continue;
+        let base;
+        try {
+            if(!r.cycleBuffer) {
+                base=acquirePayload(v,'custom');
+                r.cycleBuffer=Memory.alloc(v.size);
+                Memory.copy(r.cycleBuffer,base.memory,v.size);
+            }
+            for(let i=0;i<a.tracks.length;i++) {
+                if(r.cycleSteps && steps[i]===r.cycleSteps[i])continue;
+                const track=a.tracks[i],descriptor=track.frames[steps[i]];
+                let patch;
+                try {
+                    patch=acquirePayload({size:descriptor.size,name:v.name,custom:descriptor},'custom');
+                    let source=0;
+                    for(const [offset,length] of track.runs) {
+                        Memory.copy(r.cycleBuffer.add(offset),patch.memory.add(source),length);source+=length;
+                    }
+                } finally {releasePayload(patch);}
+            }
+            gl.bind(TARGET,r.id);
+            imageUpload(TARGET,0,r.format,v.width,v.height,0,v.size,r.cycleBuffer);
+            r.cycleSteps=steps;
+        } catch(error) {log('cloud-animation-error',{name:v.name,message:String(error)});}
+        finally {releasePayload(base);}
+    }
+}
 function frame() {
     if (!gl || !ready || uploading || gl.context().isNull()) return;
     frameCount++;
@@ -135,7 +173,8 @@ function frame() {
     } else { pressed6=false; pressed7=false; }
     if (!imageUpload) return;
     const pending = [...tracked.values()].filter(r => r.mode !== choice);
-    if (!pending.length) return;
+    const animate=choice==='custom' && [...tracked.values()].some(r=>r.variant.animation);
+    if (!pending.length && !animate) return;
     gl.getInteger(BINDING,intBuf); const old = intBuf.readU32();
     uploading=true;
     let count=0;
@@ -164,8 +203,11 @@ function frame() {
                     continue;
                 }
             }
-            r.mode=choice; count++;
+            r.mode=choice;
+            r.cycleSteps=null;r.cycleBuffer=null;r.cycleStart=undefined;
+            count++;
         }
+        if(animate)updateClouds(Date.now());
     } finally { gl.bind(TARGET,old); uploading=false; }
     if (count) log('switched',{mode:choice,count});
 }
@@ -178,6 +220,11 @@ function initGL(module) {
         bind:fn('glBindTexture','void',['uint','uint']),
         isTexture:fn('glIsTexture','uchar',['uint'])
     };
+    Interceptor.attach(module.getExportByName('glBindTexture'),{onEnter(args) {
+        if(uploading || args[0].toUInt32()!==TARGET)return;
+        const r=tracked.get(args[1].toUInt32());
+        if(r && r.variant.animation)r.lastUsed=Date.now();
+    }});
     Interceptor.attach(module.getExportByName('wglGetProcAddress'),{
         onEnter(args) {this.name=args[0].readCString();},
         onLeave(result) {
