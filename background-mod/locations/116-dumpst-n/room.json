@@ -8,18 +8,5 @@
     "116-dumpst-n-layer10.chnk",
     "116-dumpst-n-layer40.chnk"
   ],
-  "protected": [
-    [
-      385,
-      382,
-      482,
-      510
-    ],
-    [
-      1750,
-      215,
-      2080,
-      405
-    ]
-  ]
+  "protected": []
 }
