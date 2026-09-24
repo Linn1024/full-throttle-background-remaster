@@ -9,6 +9,15 @@ def main():
  room='019-mo-bench';folder=ROOT/'locations'/room;out=folder/'custom-v1'
  old=np.array(Image.open(folder/'official-remaster.png').convert('RGB'))
  art=np.array(Image.open(out/'in-game-texture-preview.png').convert('RGB'))
+ silhouette=np.zeros(old.shape[:2],np.uint8)
+ # Tight outline of the bike body; the former rectangular guard also covered
+ # a large patch of rug. Coordinates measured on the registered source.
+ outline=np.array([[210,410],[250,320],[300,306],[354,240],[506,124],
+  [531,86],[568,126],[606,107],[661,28],[700,46],[759,157],
+  [800,207],[800,334],[782,396],[784,429],[759,460],[680,460],
+  [630,410],[622,374],[568,407],[504,467],[453,503],[400,531],
+  [350,559],[230,559],[200,470]],np.int32)+[1150,640]
+ cv2.fillPoly(silhouette,[outline],1)
  reports=[];preview=Image.fromarray(art).convert('RGBA')
  # Object-local coordinates: 173 independent feature inliers establish +310 X.
  # Layer20 is the foreground-only bike/ropes mask and remains original.
@@ -25,18 +34,18 @@ def main():
     sx=np.clip(xy[:,:,0].astype(int),0,art.shape[1]-1);sy=np.clip(xy[:,:,1].astype(int),0,art.shape[0]-1)
     sl=(slice(lo[1],hi[1]),slice(lo[0],hi[0]));before=original[sl]
     difference=np.max(np.abs(before[:,:,:3].astype(float)-old[sy,sx]),axis=2)
-    keep=(difference>24)|(before[:,:,3]<250)
-    # Black bike panels can coincidentally match the bare room. Protect the
-    # complete foreground bike envelope, not just differing colour pixels.
-    keep|=((sx>1200)&(sy>690))|(sy>1040)
+    keep=((difference>24)|(silhouette[sy,sx]>0))&(before[:,:,3]>0)
     guard[sl]|=inside&keep
     eligible[sl]|=inside&~keep
     target[sl][:,:,:3][inside&~keep]=art[sy,sx][inside&~keep]
-   guard=cv2.dilate(guard.astype('uint8'),np.ones((5,5),np.uint8))!=0
+   # Fill small accidental matches inside bike panels without excluding the
+   # surrounding rug in a large rectangular envelope (the old visible halo).
+   holes=(~guard).astype('uint8')
+   count,labels,stats,_=cv2.connectedComponentsWithStats(holes)
+   for label in range(1,count):
+    if stats[label,cv2.CC_STAT_AREA]<96:guard[labels==label]=True
+   guard=cv2.dilate(guard.astype('uint8'),np.ones((3,3),np.uint8))!=0
    eligible&=~guard
-   distance=cv2.distanceTransform(eligible.astype('uint8'),cv2.DIST_L2,5)
-   weight=np.minimum(distance/8,1)[:,:,None]
-   target[:,:,:3]=np.rint(target[:,:,:3]*weight+original[:,:,:3]*(1-weight)).astype('uint8')
    png=out/f'{path.stem}-texture{ti}.png';Image.fromarray(target).save(png)
    fmt='BC3_UNORM' if tex['format']==b'DXT5' else 'BC1_UNORM';stride=16 if fmt=='BC3_UNORM' else 8
    subprocess.run([str(ROOT/'tools/texconv.exe'),'-f',fmt,'-m','1','-y','-o',str(out),str(png)],check=True,capture_output=True)

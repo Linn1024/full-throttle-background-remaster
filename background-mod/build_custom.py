@@ -10,8 +10,8 @@ from scene_assets import ROOT, ROOM, SIZE, read_chunk, render, triangle_pixels
 
 OUT = ROOT / 'custom-v1'
 TEXCONV = ROOT / 'tools/texconv.exe'
-# Scene-space rectangles enclosing the complete official sign and dumpster label.
-PROTECTED = [(1730, 214, 2080, 442), (390, 378, 490, 520)]
+# Scene-space rectangle retaining the official General Surplus sign.
+PROTECTED = [(1730, 214, 2080, 442)]
 
 def build(location=None):
     artwork_crop = None

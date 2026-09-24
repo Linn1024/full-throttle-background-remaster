@@ -8,18 +8,5 @@
     "027-junkgate-layer10.chnk",
     "027-junkgate-layer20.chnk"
   ],
-  "protected": [
-    [
-      185,
-      50,
-      915,
-      310
-    ],
-    [
-      370,
-      308,
-      785,
-      420
-    ]
-  ]
+  "protected": []
 }
