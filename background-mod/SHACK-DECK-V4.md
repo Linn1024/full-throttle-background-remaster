@@ -45,3 +45,19 @@ Original alpha, rope pixels and all unedited BC3 blocks pass equality checks.
 The actual compressed sprite is inspected against its neighbor in
 `reviews/shack-seam-v5/packed-composite.png`. No new generation was needed;
 this is registration of existing approved artwork. Gameplay remains unverified.
+
+## Two-layer correction (v6 supersedes v5)
+
+The next screenshot exposed remaining joins, including the neighboring porch
+edge sprite in atlas a02. `fix_shack_joins_v6.py` starts from the v4 raised deck
+to remove the hard v5 polygon. It transfers shared scenery around the actual
+moving deck and narrow rope silhouettes, with a short transition at foreground
+edges. It also registers the complete fixed porch-edge sprite to the same room
+background. Both atlas a01 and a02 are now included in the compressed composite
+review at `reviews/shack-joins-v6/packed-composite.png`.
+
+Run v6 after v4 instead of v5. It retains original alpha, white control masks,
+and all pixels outside changed compression blocks. The neighboring white mask
+cell is excluded from the offline sprite preview, as it is not rendered by that
+sprite's UV region. Cache refreshed; this remains an offline validation and does
+not establish that all in-game animation states are free of seams.
