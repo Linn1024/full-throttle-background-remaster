@@ -155,6 +155,10 @@ function updateClouds(now) {
             gl.bind(TARGET,r.id);
             imageUpload(TARGET,0,r.format,v.width,v.height,0,v.size,r.cycleBuffer);
             r.cycleSteps=steps;
+            if(!r.cycleLogged && steps.some(s=>s!==0)) {
+                log('cloud-animation-active',{name:v.name,tracks:a.tracks.length});
+                r.cycleLogged=true;
+            }
         } catch(error) {log('cloud-animation-error',{name:v.name,message:String(error)});}
         finally {releasePayload(base);}
     }

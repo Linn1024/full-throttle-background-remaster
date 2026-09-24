@@ -129,7 +129,9 @@ def prepare():
             key=identity['sha256']
             assert key not in seen or seen[key]==value, 'Ambiguous texture replacement'
             seen[key]=value
-    animation_path=ROOT/'reviews/cloud-cycles-v9/manifest.json'
+    animation_path=ROOT/'reviews/cloud-cycles-v11/manifest.json'
+    if not animation_path.exists():
+        animation_path=ROOT/'reviews/cloud-cycles-v9/manifest.json'
     if animation_path.exists():
         by_name={v['name']:v for v in textures}
         for animation in json.loads(animation_path.read_text()):

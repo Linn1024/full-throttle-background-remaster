@@ -1,4 +1,4 @@
-"""Reconstruct classic CYCL lighting on custom cloud art as sparse BC1 tracks.
+"""Reconstruct classic CYCL lighting on custom cloud art as sparse DXT tracks.
 
 No room geometry, alpha, archive, or executable modifications. Classic palette
 indices supply phase/direction; custom cloud silhouettes restrict the effect.
@@ -15,8 +15,11 @@ import numpy as np
 from PIL import Image
 from scene_assets import ROOT, read_chunk, triangle_pixels, render
 
-ROOMS=['033-ambush','034-scope','037-benupsht','038-ripupsht','051-corville']
-OUT=ROOT/'reviews/cloud-cycles-v9'
+ROOMS=['031-reststop','032-mensroom','033-ambush','034-scope','037-benupsht','038-ripupsht','051-corville']
+OUT=ROOT/'reviews/cloud-cycles-v11'
+GAIN=2.5
+BLUR=2.0
+RECIPE=f'strongest-block-gain-{GAIN}-blur-{BLUR}'
 
 def classic_cycles(number):
     data=(ROOT/'classic/ft.la1').read_bytes()
@@ -73,14 +76,17 @@ def build():
                 mapped=c['start']+(indices.astype(int)-c['start']+(step if c['reverse'] else -step))%(c['end']-c['start']+1)
                 delta=(palette[mapped]-palette[indices])*active[:,:,None]
                 delta=cv2.resize(delta,size,interpolation=cv2.INTER_LINEAR)
-                delta=cv2.GaussianBlur(delta,(0,0),5)*fade[:,:,None]
+                delta=cv2.GaussianBlur(delta,(0,0),BLUR)*fade[:,:,None]
                 frames.append(delta)
             fields.append(frames)
+        peaks=[np.maximum.reduce([np.max(np.abs(d),axis=2) for d in frames]) for frames in fields]
         # Only the opaque base layer contains these clouds.
         path=folder/'custom-v1'/cfg['layers'][0];chunk=read_chunk(path)
         previews={step:[] for step in (0,3,6,9)}
         for ti,tex in enumerate(chunk['textures']):
-            assert tex['format']==b'DXT1'
+            assert tex['format'] in (b'DXT1',b'DXT5')
+            stride=8 if tex['format']==b'DXT1' else 16
+            color_offset=0 if stride==8 else 8
             base=np.array(tex['image']);h,w=base.shape[:2]
             mx=np.full((h,w),-1,np.float32);my=mx.copy()
             for ids in chunk['indices'][tex['first']:tex['first']+tex['count']].reshape(-1,3):
@@ -90,6 +96,11 @@ def build():
                 mx[lo[1]:hi[1],lo[0]:hi[0]][inside]=xy[:,:,0][inside]
                 my[lo[1]:hi[1],lo[0]:hi[0]][inside]=xy[:,:,1][inside]
             tracks=[];owned=np.zeros((h//4,w//4),bool)
+            # The former first-track-wins rule could assign a block to a faint
+            # blurred fringe and discard a much stronger overlapping cycle.
+            scores=[cv2.remap(p,mx,my,cv2.INTER_LINEAR,borderMode=cv2.BORDER_CONSTANT)
+                    .reshape(h//4,4,w//4,4).mean(axis=(1,3)) for p in peaks]
+            owners=np.argmax(scores,axis=0)
             sky_pixels=cv2.remap(fade,mx,my,cv2.INTER_LINEAR,borderMode=cv2.BORDER_CONSTANT)>0
             safe_blocks=sky_pixels.reshape(h//4,4,w//4,4).all(axis=(1,3))
             preview_raw={s:bytearray(tex['raw']) for s in previews}
@@ -97,24 +108,27 @@ def build():
                 changes=[cv2.remap(d,mx,my,cv2.INTER_LINEAR,borderMode=cv2.BORDER_CONSTANT) for d in frames]
                 strength=np.max([np.max(np.abs(d),axis=2) for d in changes],axis=0)
                 eligible=(strength>1)&(base[:,:,3]==255)&(mx>=0)
-                # Reject partially transparent BC1 blocks so alpha stays exact.
+                # Animate fully opaque blocks only. BC3 runs copy color bytes
+                # separately, leaving every original alpha block untouched.
                 opaque=(base[:,:,3]==255).reshape(h//4,4,w//4,4).all(axis=(1,3))
-                blocks=eligible.reshape(h//4,4,w//4,4).any(axis=(1,3))&opaque&safe_blocks&~owned
+                blocks=eligible.reshape(h//4,4,w//4,4).any(axis=(1,3))&opaque&safe_blocks&(owners==ci)
+                assert not (blocks&owned).any()
                 if not blocks.any():continue
                 owned|=blocks;block_ids=np.flatnonzero(blocks.ravel())
                 # Store adjacent blocks as runs; shared BC1 blocks have one owner.
                 runs=[]
                 for b in block_ids:
-                    if runs and runs[-1][0]+runs[-1][1]==int(b)*8:runs[-1][1]+=8
-                    else:runs.append([int(b)*8,8])
+                    offset=int(b)*stride+color_offset
+                    if runs and runs[-1][0]+runs[-1][1]==offset:runs[-1][1]+=8
+                    else:runs.append([offset,8])
                 payloads=[]
                 key=f'{room}/{path.stem}/texture{ti}'
                 old=previous.get(key,{})
                 oldtrack=next((t for t in old.get('tracks',[]) if t['id']==c['id']),None)
                 oldblocks=set()
-                if oldtrack and old.get('base_sha256')==hashlib.sha256(tex['raw']).hexdigest():
+                if oldtrack and old.get('recipe')==RECIPE and old.get('base_sha256')==hashlib.sha256(tex['raw']).hexdigest():
                     for at,length in oldtrack['runs']:oldblocks.update(range(at,at+length,8))
-                reuse=oldtrack is not None and set(int(b)*8 for b in block_ids).issubset(oldblocks)
+                reuse=oldtrack is not None and set(int(b)*stride+color_offset for b in block_ids).issubset(oldblocks)
                 for step,delta in enumerate(changes):
                     if step==0:encoded=tex['raw']
                     elif reuse:
@@ -124,9 +138,10 @@ def build():
                         for at,length in oldtrack['runs']:
                             encoded[at:at+length]=patch[cursor:cursor+length];cursor+=length
                     else:
-                        target=base.copy();target[:,:,:3]=np.clip(np.rint(base[:,:,:3].astype(float)+delta*.85),0,255).astype('uint8')
+                        target=base.copy();target[:,:,:3]=np.clip(np.rint(base[:,:,:3].astype(float)+delta*GAIN),0,255).astype('uint8')
                         png=OUT/'encode.png';Image.fromarray(target).save(png)
-                        subprocess.run([str(ROOT/'tools/texconv.exe'),'-f','BC1_UNORM','-m','1','-y','-o',str(OUT),str(png)],check=True,capture_output=True)
+                        fmt='BC1_UNORM' if stride==8 else 'BC3_UNORM'
+                        subprocess.run([str(ROOT/'tools/texconv.exe'),'-f',fmt,'-m','1','-y','-o',str(OUT),str(png)],check=True,capture_output=True)
                         encoded=png.with_suffix('.dds').read_bytes()[128:];assert len(encoded)==len(tex['raw'])
                     data=b''.join(encoded[at:at+length] for at,length in runs)
                     dest=OUT/f'{room}-t{ti}-c{ci}-f{step}.bin';dest.write_bytes(data);payloads.append(descriptor(dest))
@@ -135,11 +150,11 @@ def build():
                             for at,length in runs:preview_raw[s][at:at+length]=encoded[at:at+length]
                 tracks.append(dict(**c,runs=runs,frames=payloads))
             for s in previews:
-                im=Image.frombytes('RGBA',(w,h),bytes(preview_raw[s]),'bcn',(1,'DXT1'))
+                im=Image.frombytes('RGBA',(w,h),bytes(preview_raw[s]),'bcn',(1 if stride==8 else 3,tex['format'].decode()))
                 assert np.array_equal(np.array(im)[:,:,3],base[:,:,3])
                 previews[s].append({**tex,'image':im})
             if tracks:
-                entries.append(dict(name=f'{room}/{path.stem}/texture{ti}',base_sha256=hashlib.sha256(tex['raw']).hexdigest(),tracks=tracks))
+                entries.append(dict(name=f'{room}/{path.stem}/texture{ti}',recipe=RECIPE,base_sha256=hashlib.sha256(tex['raw']).hexdigest(),tracks=tracks))
             print(room,ti,'tracks',len(tracks),flush=True)
         animation=[]
         for s,textures in previews.items():

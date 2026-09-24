@@ -60,3 +60,36 @@ pass equality checks. Open/closed and fridge-only packed composites are produced
 by `build_todd_overlays.py`. The lettering integration now rebuilds the room and
 its object atlases together, preventing this omitted dependency. Gameplay was
 not launched for this follow-up.
+
+## Cloud visibility follow-up (v11)
+
+Added 031-reststop and 032-mensroom, including the previously static restroom
+exterior shown in the user report. The total scope is now seven views.
+
+The initial pass attenuated motion with gain 0.85, a five-pixel blur, and
+first-track-wins block selection. That selection could discard a stronger
+cycle wherever a faint fringe from an earlier cycle reached the same block.
+The revised pass assigns each shared BC1 block to its strongest cycle, uses
+gain 2.5 and a two-pixel blur. Speed and direction still come from the classic
+CYCL data. Cloud masks, opaque-block guards, and protected regions remain in
+force. This increases the visible traveling color variation without speeding
+up the animation or animating the architecture.
+
+The revised assets and previews are in `reviews/cloud-cycles-v11/`. The launcher
+prefers this manifest; v9 remains a fallback for installations without v11.
+Cache reuse checks the animation recipe as well as the base hash, so amplitude
+or sampling changes cannot silently reuse the weak old frames. The helper logs
+`cloud-animation-active` once per animated texture for gameplay diagnostics.
+Restart game and helper. Game testing is still pending.
+
+The restroom's base textures use BC3 rather than BC1. Its sparse frames replace
+only each block's eight color bytes and retain original alpha bytes. Asset
+validation decodes every packed phase to check alpha and compares measured
+color variation with v9; `test_cloud_cycles.py` exercises the same runtime paths
+for the added textures without launching the game.
+
+Validation passed for all 717 frames across seven rooms. On pixels shared with
+v9, mean peak color variation is 3.26–4.15 times larger across the existing
+animated textures. All alpha is unchanged. The actual JavaScript passed 200
+scheduling/compositing/switching checks across 20 textures. The 32-bit cache
+passed 1,737 payload loads with a 64 MiB peak.
