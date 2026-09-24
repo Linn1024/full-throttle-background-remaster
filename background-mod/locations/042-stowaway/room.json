@@ -1,0 +1,11 @@
+{
+  "room": "042-stowaway",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "042-stowaway-layer10.chnk"
+  ],
+  "protected": []
+}

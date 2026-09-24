@@ -1,0 +1,13 @@
+{
+  "room": "1007-bar",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "1007-bar-layer10.chnk",
+    "1007-bar-layer30.chnk",
+    "1007-bar-layer40.chnk"
+  ],
+  "protected": []
+}

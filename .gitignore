@@ -1,0 +1,31 @@
+# Source-only repository inside a local game installation. Default deny.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/background-mod/
+!/Play with background switcher.cmd
+/background-mod/*
+!/background-mod/*.py
+!/background-mod/*.js
+!/background-mod/*.cmd
+!/background-mod/*.md
+!/background-mod/requirements.txt
+!/background-mod/locations/
+/background-mod/locations/*
+!/background-mod/locations/*/
+/background-mod/locations/*/*
+!/background-mod/locations/*/room.json
+!/background-mod/locations/*/prompt*.txt
+!/background-mod/locations/*/*.md
+!/background-mod/reviews/
+/background-mod/reviews/*
+!/background-mod/reviews/*prompts.json
+!/background-mod/reviews/*/
+/background-mod/reviews/*/*
+!/background-mod/reviews/*/prompts.json
+!/background-mod/reviews/*/*.md
+!/background-mod/overlay-audit/
+/background-mod/overlay-audit/*
+!/background-mod/overlay-audit/registration.json
+!/background-mod/overlay-audit/*.md

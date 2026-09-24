@@ -1,0 +1,25 @@
+{
+  "room": "032-mensroom",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "032-mensroom-layer10.chnk",
+    "032-mensroom-layer20.chnk"
+  ],
+  "protected": [
+    [
+      1635,
+      305,
+      1785,
+      380
+    ],
+    [
+      1620,
+      390,
+      1830,
+      930
+    ]
+  ]
+}

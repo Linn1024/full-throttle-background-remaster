@@ -1,0 +1,12 @@
+{
+  "room": "174-cliffhng",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "174-cliffhng-layer10.chnk",
+    "174-cliffhng-layer20.chnk"
+  ],
+  "protected": []
+}

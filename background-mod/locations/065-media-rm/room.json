@@ -1,0 +1,12 @@
+{
+  "room": "065-media-rm",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "065-media-rm-layer10.chnk",
+    "065-media-rm-layer20.chnk"
+  ],
+  "protected": []
+}

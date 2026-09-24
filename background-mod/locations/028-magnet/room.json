@@ -1,0 +1,13 @@
+{
+  "room": "028-magnet",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "028-magnet-layer10.chnk",
+    "028-magnet-layer20.chnk",
+    "028-magnet-layer30.chnk"
+  ],
+  "protected": []
+}

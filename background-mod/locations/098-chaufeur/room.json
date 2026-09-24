@@ -1,0 +1,19 @@
+{
+  "room": "098-chaufeur",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "098-chaufeur-layer10.chnk",
+    "098-chaufeur-layer20.chnk"
+  ],
+  "protected": [
+    [
+      885,
+      730,
+      1170,
+      825
+    ]
+  ]
+}

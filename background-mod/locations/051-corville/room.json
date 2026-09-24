@@ -1,0 +1,13 @@
+{
+  "room": "051-corville",
+  "size": [
+    3820,
+    1200
+  ],
+  "layers": [
+    "051-corville-layer10.chnk",
+    "051-corville-layer20.chnk",
+    "051-corville-layer30.chnk"
+  ],
+  "protected": []
+}

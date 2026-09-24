@@ -1,0 +1,12 @@
+{
+  "room": "076-gastower",
+  "size": [
+    2220,
+    2400
+  ],
+  "layers": [
+    "076-gastower-layer10.chnk",
+    "076-gastower-layer40.chnk"
+  ],
+  "protected": []
+}

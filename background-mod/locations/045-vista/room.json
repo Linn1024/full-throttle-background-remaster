@@ -1,0 +1,14 @@
+{
+  "room": "045-vista",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "045-vista-layer10.chnk",
+    "045-vista-layer30.chnk",
+    "045-vista-layer40.chnk",
+    "045-vista-layer50.chnk"
+  ],
+  "protected": []
+}

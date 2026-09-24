@@ -1,0 +1,12 @@
+{
+  "room": "095-minefld",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "095-minefld-layer20.chnk",
+    "095-minefld-layer30.chnk"
+  ],
+  "protected": []
+}

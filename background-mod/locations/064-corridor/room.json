@@ -1,0 +1,18 @@
+{
+  "room": "064-corridor",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "064-corridor-layer10.chnk"
+  ],
+  "protected": [
+    [
+      1530,
+      325,
+      1795,
+      460
+    ]
+  ]
+}

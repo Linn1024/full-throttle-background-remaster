@@ -1,0 +1,1 @@
+Edit the supplied cemetery panorama only by removing all white margins above and below it. Return only the painted scene, edge to edge, with no border or padding. Keep the entire width from leftmost road to rightmost graves and all painted content intact, preserving relative layout, dark violet palette and details. The output must contain no white strips.

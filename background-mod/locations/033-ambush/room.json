@@ -1,0 +1,11 @@
+{
+  "room": "033-ambush",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "033-ambush-layer10.chnk"
+  ],
+  "protected": []
+}

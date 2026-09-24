@@ -1,0 +1,19 @@
+{
+  "room": "026-gas-gate",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "026-gas-gate-layer10.chnk",
+    "026-gas-gate-layer30.chnk"
+  ],
+  "protected": [
+    [
+      1100,
+      510,
+      1200,
+      780
+    ]
+  ]
+}

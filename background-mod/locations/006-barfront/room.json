@@ -1,0 +1,32 @@
+{
+  "room": "006-barfront",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "006-barfront-layer20.chnk",
+    "006-barfront-layer30.chnk",
+    "006-barfront-layer40.chnk"
+  ],
+  "protected": [
+    [
+      975,
+      75,
+      1530,
+      365
+    ],
+    [
+      1560,
+      320,
+      1675,
+      415
+    ],
+    [
+      1760,
+      85,
+      2220,
+      395
+    ]
+  ]
+}

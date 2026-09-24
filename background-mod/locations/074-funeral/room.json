@@ -1,0 +1,12 @@
+{
+  "room": "074-funeral",
+  "size": [
+    7060,
+    1200
+  ],
+  "layers": [
+    "074-funeral-layer10.chnk",
+    "074-funeral-layer20.chnk"
+  ],
+  "protected": []
+}

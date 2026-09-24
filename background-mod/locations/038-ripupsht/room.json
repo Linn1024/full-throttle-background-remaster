@@ -1,0 +1,18 @@
+{
+  "room": "038-ripupsht",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "038-ripupsht-layer10.chnk"
+  ],
+  "protected": [
+    [
+      400,
+      0,
+      660,
+      230
+    ]
+  ]
+}

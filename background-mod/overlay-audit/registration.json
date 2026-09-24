@@ -1,0 +1,1979 @@
+[
+  {
+    "room": "003-cab",
+    "file": "003-cab_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          663.4423980712891,
+          527.5188903808594
+        ],
+        "matches": 6,
+        "atlas_bounds": [
+          722,
+          438,
+          1201,
+          517
+        ]
+      }
+    ]
+  },
+  {
+    "room": "005-bar-road",
+    "file": "005-bar-road_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "006-barfront",
+    "file": "006-barfront_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 1.0,
+        "shift": [
+          469.49365234375,
+          -54.498443603515625
+        ],
+        "matches": 280,
+        "atlas_bounds": [
+          33,
+          585,
+          866,
+          801
+        ]
+      },
+      {
+        "scale": 1.0,
+        "shift": [
+          601.6550598144531,
+          383.56847381591797
+        ],
+        "matches": 8,
+        "atlas_bounds": [
+          722,
+          188,
+          778,
+          225
+        ]
+      }
+    ]
+  },
+  {
+    "room": "006-barfront",
+    "file": "006-barfront_room_pk_a01.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "007-bar",
+    "file": "007-bar_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "010-dumpster",
+    "file": "010-dumpster_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 1.0,
+        "shift": [
+          989.6749725341797,
+          287.4635009765625
+        ],
+        "matches": 16,
+        "atlas_bounds": [
+          172,
+          95,
+          468,
+          604
+        ]
+      }
+    ]
+  },
+  {
+    "room": "017-mo-shop",
+    "file": "017-mo-shop_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 1.0,
+        "shift": [
+          669.5265350341797,
+          -0.4926300048828125
+        ],
+        "matches": 270,
+        "atlas_bounds": [
+          4,
+          16,
+          674,
+          859
+        ]
+      }
+    ]
+  },
+  {
+    "room": "017-mo-shop",
+    "file": "017-mo-shop_room_pk_a01.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 1.0,
+        "shift": [
+          669.5108394622803,
+          -0.523223876953125
+        ],
+        "matches": 184,
+        "atlas_bounds": [
+          12,
+          16,
+          674,
+          616
+        ]
+      }
+    ]
+  },
+  {
+    "room": "017-mo-shop",
+    "file": "017-mo-shop_room_pk_a02.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "018-mo-shack",
+    "file": "018-mo-shack_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1469.0987243652344,
+          95.41252899169922
+        ],
+        "matches": 41,
+        "atlas_bounds": [
+          18,
+          15,
+          735,
+          1533
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1107.1412353515625,
+          95.43473434448242
+        ],
+        "matches": 35,
+        "atlas_bounds": [
+          876,
+          15,
+          1401,
+          1518
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          791.2000732421875,
+          574.961181640625
+        ],
+        "matches": 9,
+        "atlas_bounds": [
+          1717,
+          1067,
+          1812,
+          1143
+        ]
+      }
+    ]
+  },
+  {
+    "room": "018-mo-shack",
+    "file": "018-mo-shack_room_pk_a01.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1469.1606674194336,
+          130.98134231567383
+        ],
+        "matches": 24,
+        "atlas_bounds": [
+          16,
+          119,
+          665,
+          907
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1123.1630096435547,
+          131.0
+        ],
+        "matches": 24,
+        "atlas_bounds": [
+          716,
+          119,
+          1357,
+          907
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          857.398681640625,
+          143.84929656982422
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          1451,
+          95,
+          1889,
+          770
+        ]
+      }
+    ]
+  },
+  {
+    "room": "018-mo-shack",
+    "file": "018-mo-shack_room_pk_a02.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          863.4771118164062,
+          527.3177490234375
+        ],
+        "matches": 69,
+        "atlas_bounds": [
+          1086,
+          94,
+          1768,
+          706
+        ]
+      }
+    ]
+  },
+  {
+    "room": "020-melnweed",
+    "file": "020-melnweed_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1347.3258361816406,
+          143.36604690551758
+        ],
+        "matches": 24,
+        "atlas_bounds": [
+          269,
+          77,
+          470,
+          171
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1469.3795328140259,
+          143.3152618408203
+        ],
+        "matches": 19,
+        "atlas_bounds": [
+          16,
+          77,
+          218,
+          171
+        ]
+      }
+    ]
+  },
+  {
+    "room": "021-trailer",
+    "file": "021-trailer_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1057.2200546264648,
+          -2.631744384765625
+        ],
+        "matches": 60,
+        "atlas_bounds": [
+          37,
+          704,
+          792,
+          1021
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          869.3405685424805,
+          143.3828125
+        ],
+        "matches": 21,
+        "atlas_bounds": [
+          7,
+          247,
+          217,
+          631
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          439.3664245605469,
+          143.36384201049805
+        ],
+        "matches": 17,
+        "atlas_bounds": [
+          436,
+          68,
+          596,
+          265
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1109.3944854736328,
+          -414.64723205566406
+        ],
+        "matches": 11,
+        "atlas_bounds": [
+          66,
+          1124,
+          169,
+          1299
+        ]
+      }
+    ]
+  },
+  {
+    "room": "023-todds",
+    "file": "023-todds_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          626.5143127441406,
+          335.62261962890625
+        ],
+        "matches": 35,
+        "atlas_bounds": [
+          303,
+          125,
+          449,
+          414
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          626.4389419555664,
+          46.88677978515625
+        ],
+        "matches": 30,
+        "atlas_bounds": [
+          302,
+          702,
+          415,
+          967
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          988.9766845703125,
+          -98.6903076171875
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          14,
+          1516,
+          621,
+          1920
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          666.9245300292969,
+          -98.75433349609375
+        ],
+        "matches": 6,
+        "atlas_bounds": [
+          724,
+          1464,
+          1265,
+          1911
+        ]
+      }
+    ]
+  },
+  {
+    "room": "023-todds",
+    "file": "023-todds_room_pk_a01.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          99.4229736328125,
+          335.0845718383789
+        ],
+        "matches": 12,
+        "atlas_bounds": [
+          1407,
+          162,
+          1466,
+          378
+        ]
+      }
+    ]
+  },
+  {
+    "room": "025-toddshop",
+    "file": "025-toddshop_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1149.3809533119202,
+          668.3374328613281
+        ],
+        "matches": 18,
+        "atlas_bounds": [
+          11,
+          441,
+          296,
+          818
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1149.3836517333984,
+          283.39031982421875
+        ],
+        "matches": 21,
+        "atlas_bounds": [
+          22,
+          1203,
+          296,
+          1588
+        ]
+      }
+    ]
+  },
+  {
+    "room": "026-gas-gate",
+    "file": "026-gas-gate_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1229.3779907226562,
+          -98.65618896484375
+        ],
+        "matches": 11,
+        "atlas_bounds": [
+          55,
+          1666,
+          197,
+          1872
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          897.9944305419922,
+          382.3671875
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          259,
+          1522,
+          1112,
+          1614
+        ]
+      }
+    ]
+  },
+  {
+    "room": "026-gas-gate",
+    "file": "026-gas-gate_room_pk_a01.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1273.365219116211,
+          378.9063949584961
+        ],
+        "matches": 49,
+        "atlas_bounds": [
+          64,
+          37,
+          846,
+          1363
+        ]
+      }
+    ]
+  },
+  {
+    "room": "026-gas-gate",
+    "file": "026-gas-gate_room_pk_a02.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "027-junkgate",
+    "file": "027-junkgate_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          761.3518981933594,
+          119.37649726867676
+        ],
+        "matches": 34,
+        "atlas_bounds": [
+          1291,
+          42,
+          1481,
+          1394
+        ]
+      }
+    ]
+  },
+  {
+    "room": "027-junkgate",
+    "file": "027-junkgate_room_pk_a01.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          349.3436279296875,
+          407.34539794921875
+        ],
+        "matches": 47,
+        "atlas_bounds": [
+          231,
+          30,
+          933,
+          1114
+        ]
+      }
+    ]
+  },
+  {
+    "room": "028-magnet",
+    "file": "028-magnet_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "032-mensroom",
+    "file": "032-mensroom_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "033-ambush",
+    "file": "033-ambush_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "041-roadblck",
+    "file": "041-roadblck_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "043-ranch",
+    "file": "043-ranch_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1354.6226959228516,
+          186.81307983398438
+        ],
+        "matches": 57,
+        "atlas_bounds": [
+          103,
+          517,
+          293,
+          859
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          360.85577392578125,
+          667.6959686279297
+        ],
+        "matches": 9,
+        "atlas_bounds": [
+          952,
+          21,
+          1088,
+          124
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1269.930799484253,
+          428.1041717529297
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          15,
+          182,
+          60,
+          348
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          670.8557739257812,
+          423.75982666015625
+        ],
+        "matches": 8,
+        "atlas_bounds": [
+          332,
+          509,
+          412,
+          612
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1314.8151206970215,
+          434.70743560791016
+        ],
+        "matches": 6,
+        "atlas_bounds": [
+          95,
+          275,
+          154,
+          351
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1315.0652599334717,
+          428.1361846923828
+        ],
+        "matches": 6,
+        "atlas_bounds": [
+          105,
+          63,
+          158,
+          106
+        ]
+      }
+    ]
+  },
+  {
+    "room": "044-cu-parts",
+    "file": "044-cu-parts_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "044-cu-parts",
+    "file": "044-cu-parts_room_pk_a01.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          253.45516967773438,
+          474.3219451904297
+        ],
+        "matches": 15,
+        "atlas_bounds": [
+          137,
+          75,
+          886,
+          512
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1131.6106872558594,
+          527.4007873535156
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          954,
+          111,
+          1348,
+          678
+        ]
+      }
+    ]
+  },
+  {
+    "room": "044-cu-parts",
+    "file": "044-cu-parts_room_pk_a02.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "045-vista",
+    "file": "045-vista_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "046-plaque",
+    "file": "046-plaque_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "048-caveroad",
+    "file": "048-caveroad_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "049-caveturn",
+    "file": "049-caveturn_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "050-cavemesa",
+    "file": "050-cavemesa_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "051-corville",
+    "file": "051-corville_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "052-vultrock",
+    "file": "052-vultrock_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "053-vultures",
+    "file": "053-vultures_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "054-souvenir",
+    "file": "054-souvenir_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          463.3524169921875,
+          -386.5985870361328
+        ],
+        "matches": 28,
+        "atlas_bounds": [
+          929,
+          808,
+          1152,
+          1138
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          243.3631591796875,
+          -0.5964508056640625
+        ],
+        "matches": 11,
+        "atlas_bounds": [
+          796,
+          117,
+          885,
+          268
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          725.9200744628906,
+          -244.8538818359375
+        ],
+        "matches": 5,
+        "atlas_bounds": [
+          596,
+          1898,
+          667,
+          1944
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          685.6254577636719,
+          -0.628997802734375
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          500,
+          15,
+          698,
+          366
+        ]
+      }
+    ]
+  },
+  {
+    "room": "055-turnstil",
+    "file": "055-turnstil_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          632.3576049804688,
+          -198.62326049804688
+        ],
+        "matches": 209,
+        "atlas_bounds": [
+          982,
+          720,
+          1310,
+          1305
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          447.877685546875,
+          149.36772537231445
+        ],
+        "matches": 194,
+        "atlas_bounds": [
+          1367,
+          79,
+          1679,
+          599
+        ]
+      }
+    ]
+  },
+  {
+    "room": "056-arena",
+    "file": "056-arena_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          497.881591796875,
+          -156.4330596923828
+        ],
+        "matches": 10,
+        "atlas_bounds": [
+          1286,
+          682,
+          1402,
+          749
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          741.6473999023438,
+          -146.17514038085938
+        ],
+        "matches": 9,
+        "atlas_bounds": [
+          801,
+          668,
+          915,
+          714
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          619.881591796875,
+          -156.4330596923828
+        ],
+        "matches": 10,
+        "atlas_bounds": [
+          1042,
+          682,
+          1158,
+          749
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          628.1310119628906,
+          -308.5097198486328
+        ],
+        "matches": 9,
+        "atlas_bounds": [
+          108,
+          890,
+          225,
+          977
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          986.4446868896484,
+          -162.82138061523438
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          302,
+          535,
+          409,
+          593
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          864.4447021484375,
+          -162.82138061523438
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          546,
+          535,
+          653,
+          593
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          620.4447021484375,
+          -162.82138061523438
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          1034,
+          535,
+          1141,
+          593
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          498.4447021484375,
+          -162.82138061523438
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          1278,
+          535,
+          1385,
+          593
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1107.9440002441406,
+          -133.88026428222656
+        ],
+        "matches": 6,
+        "atlas_bounds": [
+          66,
+          665,
+          165,
+          704
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1108.4271869659424,
+          -162.82138061523438
+        ],
+        "matches": 6,
+        "atlas_bounds": [
+          58,
+          539,
+          165,
+          593
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          244.4447021484375,
+          95.17847442626953
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          1786,
+          19,
+          1893,
+          77
+        ]
+      }
+    ]
+  },
+  {
+    "room": "057-demowall",
+    "file": "057-demowall_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "060-big-door",
+    "file": "060-big-door_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "061-crakwall",
+    "file": "061-crakwall_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 1.0,
+        "shift": [
+          496.1095275878906,
+          188.9893798828125
+        ],
+        "matches": 24,
+        "atlas_bounds": [
+          753,
+          654,
+          932,
+          822
+        ]
+      },
+      {
+        "scale": 1.0,
+        "shift": [
+          1225.5926666259766,
+          622.9789428710938
+        ],
+        "matches": 22,
+        "atlas_bounds": [
+          19,
+          274,
+          202,
+          388
+        ]
+      },
+      {
+        "scale": 1.0,
+        "shift": [
+          733.5926513671875,
+          622.8979034423828
+        ],
+        "matches": 16,
+        "atlas_bounds": [
+          513,
+          293,
+          694,
+          388
+        ]
+      },
+      {
+        "scale": 1.0,
+        "shift": [
+          -90.20675659179688,
+          -772.8690185546875
+        ],
+        "matches": 5,
+        "atlas_bounds": [
+          494,
+          889,
+          549,
+          908
+        ]
+      },
+      {
+        "scale": 1.0,
+        "shift": [
+          1225.5085906982422,
+          188.90570068359375
+        ],
+        "matches": 5,
+        "atlas_bounds": [
+          157,
+          766,
+          202,
+          823
+        ]
+      },
+      {
+        "scale": 1.0,
+        "shift": [
+          979.6337890625,
+          622.2178344726562
+        ],
+        "matches": 5,
+        "atlas_bounds": [
+          267,
+          298,
+          448,
+          389
+        ]
+      },
+      {
+        "scale": 1.0,
+        "shift": [
+          979.5692443847656,
+          188.81195068359375
+        ],
+        "matches": 5,
+        "atlas_bounds": [
+          353,
+          769,
+          448,
+          822
+        ]
+      }
+    ]
+  },
+  {
+    "room": "061-crakwall",
+    "file": "061-crakwall_room_pk_a01.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 1.0,
+        "shift": [
+          1230.0153141021729,
+          622.9991760253906
+        ],
+        "matches": 36,
+        "atlas_bounds": [
+          14,
+          220,
+          207,
+          388
+        ]
+      },
+      {
+        "scale": 1.0,
+        "shift": [
+          988.143798828125,
+          623.0061492919922
+        ],
+        "matches": 30,
+        "atlas_bounds": [
+          256,
+          227,
+          449,
+          389
+        ]
+      },
+      {
+        "scale": 1.0,
+        "shift": [
+          1230.0602722167969,
+          189.03509521484375
+        ],
+        "matches": 21,
+        "atlas_bounds": [
+          7,
+          713,
+          207,
+          824
+        ]
+      }
+    ]
+  },
+  {
+    "room": "062-office",
+    "file": "062-office_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "063-safe",
+    "file": "063-safe_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 1.0,
+        "shift": [
+          657.0171508789062,
+          381.98699951171875
+        ],
+        "matches": 28,
+        "atlas_bounds": [
+          239,
+          351,
+          458,
+          540
+        ]
+      }
+    ]
+  },
+  {
+    "room": "063-safe",
+    "file": "063-safe_room_pk_a01.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "064-corridor",
+    "file": "064-corridor_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "064-corridor",
+    "file": "064-corridor_room_pk_a01.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "065-media-rm",
+    "file": "065-media-rm_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "066-projectr",
+    "file": "066-projectr_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1191.3826293945312,
+          -0.6040191650390625
+        ],
+        "matches": 104,
+        "atlas_bounds": [
+          425,
+          39,
+          872,
+          1144
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          909.3839721679688,
+          -0.5924072265625
+        ],
+        "matches": 95,
+        "atlas_bounds": [
+          989,
+          39,
+          1465,
+          1144
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          545.330810546875,
+          575.384033203125
+        ],
+        "matches": 21,
+        "atlas_bounds": [
+          1787,
+          69,
+          1995,
+          651
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          667.3851623535156,
+          575.373233795166
+        ],
+        "matches": 16,
+        "atlas_bounds": [
+          1563,
+          113,
+          1738,
+          651
+        ]
+      }
+    ]
+  },
+  {
+    "room": "066-projectr",
+    "file": "066-projectr_room_pk_a01.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1107.3839416503906,
+          -0.57940673828125
+        ],
+        "matches": 93,
+        "atlas_bounds": [
+          593,
+          39,
+          1040,
+          1123
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1389.3857727050781,
+          -0.582305908203125
+        ],
+        "matches": 90,
+        "atlas_bounds": [
+          29,
+          39,
+          476,
+          1123
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          825.3827514648438,
+          -0.6173095703125
+        ],
+        "matches": 91,
+        "atlas_bounds": [
+          1157,
+          39,
+          1633,
+          1144
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1429.3278274536133,
+          -2.60321044921875
+        ],
+        "matches": 21,
+        "atlas_bounds": [
+          15,
+          1356,
+          227,
+          1807
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1427.4882354736328,
+          3.48199462890625
+        ],
+        "matches": 5,
+        "atlas_bounds": [
+          419,
+          1201,
+          433,
+          1761
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1354.8544311523438,
+          -58.70441436767578
+        ],
+        "matches": 5,
+        "atlas_bounds": [
+          320,
+          172,
+          337,
+          264
+        ]
+      }
+    ]
+  },
+  {
+    "room": "066-projectr",
+    "file": "066-projectr_room_pk_a02.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1107.3827514648438,
+          -0.6104736328125
+        ],
+        "matches": 93,
+        "atlas_bounds": [
+          593,
+          39,
+          1069,
+          1144
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1389.3839416503906,
+          -0.58880615234375
+        ],
+        "matches": 90,
+        "atlas_bounds": [
+          29,
+          39,
+          476,
+          1144
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1354.8544311523438,
+          -58.70441436767578
+        ],
+        "matches": 5,
+        "atlas_bounds": [
+          320,
+          172,
+          337,
+          264
+        ]
+      }
+    ]
+  },
+  {
+    "room": "067-stage",
+    "file": "067-stage_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "070-showdown",
+    "file": "070-showdown_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "073-cargo",
+    "file": "073-cargo_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "073-cargo",
+    "file": "073-cargo_room_pk_a01.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "073-cargo",
+    "file": "073-cargo_room_pk_a02.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "076-gastower",
+    "file": "076-gastower_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "090-c130fore",
+    "file": "090-c130fore_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "091-junkyard",
+    "file": "091-junkyard_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "095-minefld",
+    "file": "095-minefld_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "098-chaufeur",
+    "file": "098-chaufeur_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "099-behind-t",
+    "file": "099-behind-t_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          982.4203491210938,
+          -370.1295928955078
+        ],
+        "matches": 36,
+        "atlas_bounds": [
+          116,
+          1559,
+          865,
+          1942
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1388.165298461914,
+          -74.22439575195312
+        ],
+        "matches": 13,
+        "atlas_bounds": [
+          48,
+          951,
+          281,
+          1430
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          582.139892578125,
+          -72.6416015625
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          1133,
+          1212,
+          1683,
+          1343
+        ]
+      }
+    ]
+  },
+  {
+    "room": "100-mr-truck",
+    "file": "100-mr-truck_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 1.0,
+        "shift": [
+          469.48926734924316,
+          479.56127166748047
+        ],
+        "matches": 74,
+        "atlas_bounds": [
+          5,
+          9,
+          546,
+          321
+        ]
+      }
+    ]
+  },
+  {
+    "room": "1007-bar",
+    "file": "1007-bar_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "107-barfro-n",
+    "file": "107-barfro-n_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 1.0,
+        "shift": [
+          469.50840759277344,
+          479.45848083496094
+        ],
+        "matches": 66,
+        "atlas_bounds": [
+          14,
+          9,
+          581,
+          375
+        ]
+      }
+    ]
+  },
+  {
+    "room": "115-barroa-n",
+    "file": "115-barroa-n_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "116-dumpst-n",
+    "file": "116-dumpst-n_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 1.0,
+        "shift": [
+          668.7813720703125,
+          190.52655696868896
+        ],
+        "matches": 26,
+        "atlas_bounds": [
+          25,
+          21,
+          450,
+          186
+        ]
+      },
+      {
+        "scale": 1.0,
+        "shift": [
+          588.7358856201172,
+          -192.92727661132812
+        ],
+        "matches": 9,
+        "atlas_bounds": [
+          23,
+          349,
+          130,
+          453
+        ]
+      }
+    ]
+  },
+  {
+    "room": "123-cargofnt",
+    "file": "123-cargofnt_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          221.39239501953125,
+          47.371620178222656
+        ],
+        "matches": 53,
+        "atlas_bounds": [
+          988,
+          75,
+          2001,
+          355
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          439.391357421875,
+          -500.62837982177734
+        ],
+        "matches": 56,
+        "atlas_bounds": [
+          634,
+          1171,
+          1565,
+          1451
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          463.3955078125,
+          -196.65139770507812
+        ],
+        "matches": 50,
+        "atlas_bounds": [
+          732,
+          563,
+          1517,
+          843
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          661.4666137695312,
+          673.318115234375
+        ],
+        "matches": 5,
+        "atlas_bounds": [
+          1568,
+          590,
+          1620,
+          652
+        ]
+      }
+    ]
+  },
+  {
+    "room": "129-fuselage",
+    "file": "129-fuselage_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "130-dustspil",
+    "file": "130-dustspil_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "130-dustspil",
+    "file": "130-dustspil_room_pk_a01.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "130-dustspil",
+    "file": "130-dustspil_room_pk_a02.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "130-dustspil",
+    "file": "130-dustspil_room_pk_a03.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "130-dustspil",
+    "file": "130-dustspil_room_pk_a04.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "131-petes",
+    "file": "131-petes_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          749.0411071777344,
+          767.7128219604492
+        ],
+        "matches": 50,
+        "atlas_bounds": [
+          37,
+          30,
+          483,
+          417
+        ]
+      }
+    ]
+  },
+  {
+    "room": "132-cu-hand",
+    "file": "132-cu-hand_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          617.3662414550781,
+          -244.02232360839844
+        ],
+        "matches": 6,
+        "atlas_bounds": [
+          816,
+          1138,
+          868,
+          1152
+        ]
+      }
+    ]
+  },
+  {
+    "room": "141-cockpit",
+    "file": "141-cockpit_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1547.5844268798828,
+          861.1196632385254
+        ],
+        "matches": 7,
+        "atlas_bounds": [
+          284,
+          29,
+          431,
+          129
+        ]
+      }
+    ]
+  },
+  {
+    "room": "144-scold",
+    "file": "144-scold_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1303.8725891113281,
+          719.8701782226562
+        ],
+        "matches": 213,
+        "atlas_bounds": [
+          23,
+          10,
+          1231,
+          464
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1349.3774375915527,
+          177.3511962890625
+        ],
+        "matches": 10,
+        "atlas_bounds": [
+          31,
+          1296,
+          259,
+          1445
+        ]
+      },
+      {
+        "scale": 0.5,
+        "shift": [
+          1187.364273071289,
+          177.3511962890625
+        ],
+        "matches": 9,
+        "atlas_bounds": [
+          355,
+          1296,
+          583,
+          1445
+        ]
+      }
+    ]
+  },
+  {
+    "room": "159-cavetrn2",
+    "file": "159-cavetrn2_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1149.35791015625,
+          815.3745918273926
+        ],
+        "matches": 9,
+        "atlas_bounds": [
+          15,
+          38,
+          666,
+          100
+        ]
+      }
+    ]
+  },
+  {
+    "room": "164-cruise",
+    "file": "164-cruise_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "169-cock-mon",
+    "file": "169-cock-mon_room_pk_a00.dxt",
+    "status": "no-confident-match",
+    "candidates": []
+  },
+  {
+    "room": "173-crgotruk",
+    "file": "173-crgotruk_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          878.486572265625,
+          386.4368543624878
+        ],
+        "matches": 14,
+        "atlas_bounds": [
+          789,
+          15,
+          1086,
+          362
+        ]
+      }
+    ]
+  },
+  {
+    "room": "174-cliffhng",
+    "file": "174-cliffhng_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          309.8987731933594,
+          479.42065811157227
+        ],
+        "matches": 9,
+        "atlas_bounds": [
+          420,
+          60,
+          458,
+          247
+        ]
+      }
+    ]
+  },
+  {
+    "room": "191-mr-trkbk",
+    "file": "191-mr-trkbk_room_pk_a00.dxt",
+    "status": "candidate",
+    "candidates": [
+      {
+        "scale": 0.5,
+        "shift": [
+          1389.3519668579102,
+          383.4174499511719
+        ],
+        "matches": 9,
+        "atlas_bounds": [
+          138,
+          63,
+          212,
+          226
+        ]
+      }
+    ]
+  }
+]

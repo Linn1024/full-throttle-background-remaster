@@ -1,0 +1,12 @@
+{
+  "room": "049-caveturn",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "049-caveturn-layer10.chnk",
+    "049-caveturn-layer30.chnk"
+  ],
+  "protected": []
+}

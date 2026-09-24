@@ -1,0 +1,12 @@
+{
+  "room": "092-benkeys",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "092-benkeys-layer10.chnk",
+    "092-benkeys-layer20.chnk"
+  ],
+  "protected": []
+}

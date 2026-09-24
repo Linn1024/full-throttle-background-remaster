@@ -1,0 +1,11 @@
+{
+  "room": "164-cruise",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "164-cruise-layer20.chnk"
+  ],
+  "protected": []
+}

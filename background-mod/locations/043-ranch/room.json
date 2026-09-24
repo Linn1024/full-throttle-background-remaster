@@ -1,0 +1,27 @@
+{
+    "room":  "043-ranch",
+    "size":  [
+                 2220,
+                 1200
+             ],
+    "layers":  [
+                   "043-ranch-layer10.chnk",
+                   "043-ranch-layer20.chnk",
+                   "043-ranch-layer40.chnk",
+                   "043-ranch-layer50.chnk"
+               ],
+    "protected":  [
+                      [
+                          1230,
+                          200,
+                          1595,
+                          350
+                      ],
+                      [
+                          1150,
+                          390,
+                          1565,
+                          540
+                      ]
+                  ]
+}

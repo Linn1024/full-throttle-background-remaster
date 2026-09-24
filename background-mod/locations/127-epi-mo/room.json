@@ -1,0 +1,11 @@
+{
+  "room": "127-epi-mo",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "127-epi-mo-layer10.chnk"
+  ],
+  "protected": []
+}

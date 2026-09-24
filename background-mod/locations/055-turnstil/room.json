@@ -1,0 +1,25 @@
+{
+  "room": "055-turnstil",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "055-turnstil-layer10.chnk",
+    "055-turnstil-layer20.chnk"
+  ],
+  "protected": [
+    [
+      195,
+      85,
+      410,
+      635
+    ],
+    [
+      1115,
+      150,
+      1310,
+      510
+    ]
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "room": "050-cavemesa",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "050-cavemesa-layer10.chnk",
+    "050-cavemesa-layer20.chnk",
+    "050-cavemesa-layer40.chnk"
+  ],
+  "protected": []
+}

@@ -1,0 +1,25 @@
+{
+  "room": "056-arena",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "056-arena-layer10.chnk",
+    "056-arena-layer20.chnk"
+  ],
+  "protected": [
+    [
+      0,
+      0,
+      2220,
+      230
+    ],
+    [
+      460,
+      160,
+      900,
+      385
+    ]
+  ]
+}

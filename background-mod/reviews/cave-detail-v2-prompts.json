@@ -1,0 +1,8 @@
+{
+  "tool": "built-in imagegen",
+  "prompt": "Repaint image 1 as a richly detailed hand-painted Full Throttle background, NOT an upscale or sharpening filter. Image 2 is approved fine material texture quality reference ONLY. Preserve image1 EXACT composition, formations, walkway geometry, ropes, silhouettes, original dim teal-blue and amber lighting, black voids and light shaft. Add real small-scale limestone pitting, mineral grain, fine calcite ridges and erosion grooves WITHIN existing cave formations; crisp painted rock and gravel floor detail; fibers and weathering on existing ropes/rails. Detail must be clear on surfaces, not merely heavy outlines or blotchy cyan bands. Match original cartoon-painted aesthetic, no photorealism, no new light sources, no exposure increase, no new objects, no people, no text, no crop. Keep same wide framing. Do not copy orange daylight colors or ranch objects from reference2.",
+  "roomAdditions": {
+    "049-caveturn": "Preserve small amber-lit passage, muted dark teal rocks, road markers and foreground railing positions.",
+    "050-cavemesa": "Preserve all three carved stone faces and expressions; add pores/chisel marks without changing designs. Keep warm floor, teal carvings and amber formation. No new ornaments or glow."
+  }
+}

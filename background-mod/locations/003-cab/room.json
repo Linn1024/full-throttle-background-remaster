@@ -1,0 +1,11 @@
+{
+  "room": "003-cab",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "003-cab-layer10.chnk"
+  ],
+  "protected": []
+}

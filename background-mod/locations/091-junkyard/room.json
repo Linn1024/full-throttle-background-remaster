@@ -1,0 +1,14 @@
+{
+  "room": "091-junkyard",
+  "size": [
+    3820,
+    1200
+  ],
+  "layers": [
+    "091-junkyard-layer10.chnk",
+    "091-junkyard-layer30.chnk",
+    "091-junkyard-layer40.chnk"
+  ],
+  "protected": [],
+  "artwork_crop": [0, 22, 2169, 703]
+}

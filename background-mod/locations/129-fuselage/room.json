@@ -1,0 +1,18 @@
+{
+  "room": "129-fuselage",
+  "size": [
+    3020,
+    1200
+  ],
+  "layers": [
+    "129-fuselage-layer10.chnk"
+  ],
+  "protected": [
+    [
+      1040,
+      600,
+      1420,
+      830
+    ]
+  ]
+}

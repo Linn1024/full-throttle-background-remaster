@@ -1,0 +1,18 @@
+{
+  "room": "169-cock-mon",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "169-cock-mon-layer10.chnk"
+  ],
+  "protected": [
+    [
+      485,
+      145,
+      1700,
+      1055
+    ]
+  ]
+}

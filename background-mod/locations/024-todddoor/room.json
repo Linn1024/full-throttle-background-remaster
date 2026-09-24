@@ -1,0 +1,12 @@
+{
+  "room": "024-todddoor",
+  "size": [
+    2220,
+    1200
+  ],
+  "layers": [
+    "024-todddoor-layer10.chnk",
+    "024-todddoor-layer20.chnk"
+  ],
+  "protected": []
+}
