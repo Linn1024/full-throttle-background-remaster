@@ -8,12 +8,5 @@
     "100-mr-truck-layer10.chnk",
     "100-mr-truck-layer20.chnk"
   ],
-  "protected": [
-    [
-      540,
-      0,
-      2110,
-      470
-    ]
-  ]
+  "protected": []
 }
