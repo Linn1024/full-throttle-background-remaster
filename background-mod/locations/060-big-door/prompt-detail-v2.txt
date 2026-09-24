@@ -1,0 +1,3 @@
+Tool: built-in image_gen.imagegen
+Reference: official-remaster.png
+Refine this Full Throttle background with a modest material-detail improvement. EXACT composition, perspective, object boundaries, dark exposure, purple ambient shadows and warm door light. Fine worn cast metal on columns, subtle stone pores, concrete grain and pitting, restrained scratches on existing door forms. Preserve CORLEY MOTORS lettering and CM emblems exactly. Keep original hand-painted graphic adventure aesthetic, no photorealism, no extra lighting, no coarse noisy texture, no generic upscale. Full frame unchanged aspect ratio. No characters/UI.
