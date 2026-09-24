@@ -1,0 +1,5 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Edit target image 1: game sprite atlas. Keep EXACT square canvas, layout, object outlines, positions, perspective and every number/letter exactly unchanged. Improve ONLY the metal surfaces of all three opened engine covers: fine worn cast-metal texture, restrained scratches, pitting, edge chips, hand-painted industrial detail matching supporting style image 2. Preserve dark olive gray palette and lighting, no brightening. Preserve empty areas and silhouettes. No new objects, no borders, no rearrangement. These sprites overlay the background in image 2 so geometry must match precisely. Make flat broad metal surfaces look naturally worn, detailed and consistent with image 2.",
+  "output": "open-covers-generated.png"
+}
