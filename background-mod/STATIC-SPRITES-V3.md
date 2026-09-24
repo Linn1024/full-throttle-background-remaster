@@ -89,3 +89,15 @@ Review artifacts include `packed-details.jpg`, `bench-both.png`,
 These are offline checks, not a gameplay verification of every animation state.
 The game was not launched. Restart the game and switching helper to load the
 refreshed cache; an existing helper does not reload its cache with F7.
+
+## Workshop stripe follow-up
+
+A subsequent screenshot showed a remaining vertical strip beneath the bike.
+The workshop overlay builder protected four full-height cable columns, retaining
+old scenery below their attachment points. The guards now end at the cable
+attachments relative to each bike position instead of at the atlas bottom.
+Both raised and lowered atlases were rebuilt and inspected after compression.
+Original alpha and guarded motorcycle/cable pixels still pass equality checks.
+The separate removed-can state remains protected. Local comparisons are in
+`reviews/workshop-stripe-v4/`; the refreshed cache contains 510 texture pairs.
+Gameplay has not been launched for this follow-up.

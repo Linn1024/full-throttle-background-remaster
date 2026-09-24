@@ -31,8 +31,11 @@ def main():
         protected=np.zeros(original.shape[:2],np.uint8)
         protected[bike_y:bike_y+487,16:665]=bike.astype(np.uint8)
         # The vertical lifting cables are foreground, absent from the bare room.
-        for x0,x1 in [(70,87),(214,235),(371,393),(500,522)]:
-            protected[:height,x0:x1]=1
+        # Cable attachment heights relative to the motorcycle top. Extending
+        # these guards to the atlas bottom preserved old cabinet/floor stripes.
+        for x0,x1,end_y in [(70,87,116),(214,235,105),
+                             (371,393,241),(500,522,452)]:
+            protected[:min(height,bike_y+end_y),x0:x1]=1
         protected=cv2.dilate(protected,np.ones((5,5),np.uint8))
         dist=cv2.distanceTransform(1-protected,cv2.DIST_L2,5)
         weight=np.minimum(dist[:height,:680]/8,1)[:,:,None]
