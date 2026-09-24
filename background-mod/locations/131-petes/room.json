@@ -9,18 +9,5 @@
     "131-petes-layer30.chnk",
     "131-petes-layer40.chnk"
   ],
-  "protected": [
-    [
-      760,
-      825,
-      1005,
-      1005
-    ],
-    [
-      870,
-      345,
-      1085,
-      605
-    ]
-  ]
+  "protected": []
 }
