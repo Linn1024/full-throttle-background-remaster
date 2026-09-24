@@ -33,7 +33,7 @@ def main():
     for e in entries:
         peak,n=measure(e);count+=n;mask=peak>0
         report=dict(name=e['name'],frames=n,animated_pixels=int(mask.sum()),mean_peak_change=float(peak[mask].mean()))
-        if e['name'] in previous:
+        if e['name'] in previous and e['base_sha256']==previous[e['name']].get('base_sha256'):
             old,_=measure(previous[e['name']]);common=(old>0)&mask
             report['previous_mean_on_common_pixels']=float(old[common].mean())
             report['new_mean_on_common_pixels']=float(peak[common].mean())

@@ -44,13 +44,15 @@ def descriptor(path):
     data=path.read_bytes()
     return dict(path=str(path),sha256=hashlib.sha256(data).hexdigest(),size=len(data))
 
-def build():
+def build(rooms=None):
     OUT.mkdir(exist_ok=True,parents=True);entries=[]
     previous={e['name']:e for e in json.loads((OUT/'manifest.json').read_text())} if (OUT/'manifest.json').exists() else {}
-    for room in ROOMS:
+    if rooms is not None:entries=[e for e in previous.values() if e['name'].split('/')[0] not in rooms]
+    for room in (ROOMS if rooms is None else rooms):
         folder=ROOT/'locations'/room;cfg=json.loads((folder/'room.json').read_text())
         size=tuple(cfg['size']);n=int(room[:3]);cycles=classic_cycles(n)
         # Corville's fourth range is electrical lighting, not the requested clouds.
+        recipe=RECIPE if n!=51 else 'corville-v17-normalized-luminance-blur12'
         if n==51:cycles=cycles[:3]
         indexed=Image.open(ROOT/f'classic/ft/IMAGES/backgrounds/LECF_0001_LFLF_{n:04d}_ROOM_RMIM_IM00.png')
         indices=np.array(indexed);palette=np.array(indexed.getpalette(),dtype=np.float32).reshape(-1,3)
@@ -64,7 +66,11 @@ def build():
             sky &= (rgb[:,:,0]>rgb[:,:,1]*1.65)&(rgb[:,:,0]>rgb[:,:,2]*1.9)&(rgb[:,:,0]>18)
         else:
             # Keep buildings, road, and poles fixed; source palette sky is inset.
-            sky=cv2.resize(union,size,interpolation=cv2.INTER_NEAREST)>0
+            sky=cv2.resize(cv2.dilate(union,np.ones((7,7),np.uint8)),size,interpolation=cv2.INTER_NEAREST)>0
+        if n==51:
+            # Require painted cloud color as well as original sky ownership.
+            rgb=art.astype(float)
+            sky &= (rgb[:,:,0]>rgb[:,:,1]*1.35)&(rgb[:,:,0]>rgb[:,:,2]*1.25)&(rgb[:,:,0]>20)
         for x0,y0,x1,y1 in cfg.get('protected',[]):sky[y0:y1,x0:x1]=False
         fade=np.minimum(cv2.distanceTransform(sky.astype('uint8'),cv2.DIST_L2,5)/8,1)
         # The source field is smoothly sampled, retaining the new brushwork.
@@ -76,7 +82,17 @@ def build():
                 mapped=c['start']+(indices.astype(int)-c['start']+(step if c['reverse'] else -step))%(c['end']-c['start']+1)
                 delta=(palette[mapped]-palette[indices])*active[:,:,None]
                 delta=cv2.resize(delta,size,interpolation=cv2.INTER_LINEAR)
-                delta=cv2.GaussianBlur(delta,(0,0),BLUR)*fade[:,:,None]
+                if n==51:
+                    # Modulate custom shading instead of adding amplified RGB.
+                    # This keeps highlights and dark folds coherent at every phase.
+                    lum=np.array([.2126,.7152,.0722],np.float32)
+                    base_lum=cv2.resize(palette[indices]@lum,size,interpolation=cv2.INTER_LINEAR)
+                    coverage=cv2.GaussianBlur(cv2.resize(active.astype('float32'),size),(0,0),12)
+                    change=cv2.GaussianBlur(delta@lum,(0,0),12)/np.maximum(coverage,.05)
+                    ratio=np.clip(2*change/np.maximum(base_lum,12),-.50,.80)
+                    delta=art.astype('float32')*ratio[:,:,None]*fade[:,:,None]/GAIN
+                else:
+                    delta=cv2.GaussianBlur(delta,(0,0),BLUR)*fade[:,:,None]
                 frames.append(delta)
             fields.append(frames)
         peaks=[np.maximum.reduce([np.max(np.abs(d),axis=2) for d in frames]) for frames in fields]
@@ -126,7 +142,7 @@ def build():
                 old=previous.get(key,{})
                 oldtrack=next((t for t in old.get('tracks',[]) if t['id']==c['id']),None)
                 oldblocks=set()
-                if oldtrack and old.get('recipe')==RECIPE and old.get('base_sha256')==hashlib.sha256(tex['raw']).hexdigest():
+                if oldtrack and old.get('recipe')==recipe and old.get('base_sha256')==hashlib.sha256(tex['raw']).hexdigest():
                     for at,length in oldtrack['runs']:oldblocks.update(range(at,at+length,8))
                 reuse=oldtrack is not None and set(int(b)*stride+color_offset for b in block_ids).issubset(oldblocks)
                 for step,delta in enumerate(changes):
@@ -154,7 +170,7 @@ def build():
                 assert np.array_equal(np.array(im)[:,:,3],base[:,:,3])
                 previews[s].append({**tex,'image':im})
             if tracks:
-                entries.append(dict(name=f'{room}/{path.stem}/texture{ti}',recipe=RECIPE,base_sha256=hashlib.sha256(tex['raw']).hexdigest(),tracks=tracks))
+                entries.append(dict(name=f'{room}/{path.stem}/texture{ti}',recipe=recipe,base_sha256=hashlib.sha256(tex['raw']).hexdigest(),tracks=tracks))
             print(room,ti,'tracks',len(tracks),flush=True)
         animation=[]
         for s,textures in previews.items():
