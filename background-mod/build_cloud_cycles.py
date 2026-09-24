@@ -14,6 +14,7 @@ import cv2
 import numpy as np
 from PIL import Image
 from scene_assets import ROOT, read_chunk, triangle_pixels, render
+from texture_gutters import scene_maps
 
 ROOMS=['031-reststop','032-mensroom','033-ambush','034-scope','037-benupsht','038-ripupsht','051-corville']
 OUT=ROOT/'reviews/cloud-cycles-v11'
@@ -52,7 +53,7 @@ def build(rooms=None):
         folder=ROOT/'locations'/room;cfg=json.loads((folder/'room.json').read_text())
         size=tuple(cfg['size']);n=int(room[:3]);cycles=classic_cycles(n)
         # Corville's fourth range is electrical lighting, not the requested clouds.
-        recipe=RECIPE if n!=51 else 'corville-v17-normalized-luminance-blur12'
+        recipe=RECIPE if n!=51 else 'corville-v24-gutters-normalized-luminance-blur12'
         if n==51:cycles=cycles[:3]
         indexed=Image.open(ROOT/f'classic/ft/IMAGES/backgrounds/LECF_0001_LFLF_{n:04d}_ROOM_RMIM_IM00.png')
         indices=np.array(indexed);palette=np.array(indexed.getpalette(),dtype=np.float32).reshape(-1,3)
@@ -111,6 +112,8 @@ def build(rooms=None):
                 lo,hi,weights,inside=r;xy=(weights@v[:,:2])/2
                 mx[lo[1]:hi[1],lo[0]:hi[0]][inside]=xy[:,:,0][inside]
                 my[lo[1]:hi[1],lo[0]:hi[0]][inside]=xy[:,:,1][inside]
+            if n==51:
+                mx,my,_=scene_maps(chunk,tex)
             tracks=[];owned=np.zeros((h//4,w//4),bool)
             # The former first-track-wins rule could assign a block to a faint
             # blurred fringe and discard a much stronger overlapping cycle.

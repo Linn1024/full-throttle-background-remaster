@@ -1,0 +1,30 @@
+{
+  "jobs": [
+    {
+      "key": "funeral-0",
+      "ref": "funeral-0-original.png",
+      "prompt": "Precisely redraw this game background section at high detail. Preserve EXACT camera, composition, all monument/gravestone/statue/building silhouettes, all their positions, tree outlines, lighting, palette and aspect ratio. Restore crisp hand-painted stone carvings, individual grass and leaves, atmospheric cloud brushwork. Eliminate pixelation, blurry enlarged pixels, straight tile seams and the thin accidental lines at top and bottom. Do not change scene design, add monuments, people, text, extra borders or crop. This is a section of a continuous panorama: left and right edges must exactly match the reference's positions and colors. Fine painted detail, not sharpening halos or photographic textures."
+    },
+    {
+      "key": "funeral-1",
+      "ref": "funeral-1-original.png",
+      "prompt": "Precisely redraw this game background section at high detail. Preserve EXACT camera, composition, all monument/gravestone/statue/building silhouettes, all their positions, tree outlines, lighting, palette and aspect ratio. Restore crisp hand-painted stone carvings, individual grass and leaves, atmospheric cloud brushwork. Eliminate pixelation, blurry enlarged pixels, straight tile seams and the thin accidental lines at top and bottom. Do not change scene design, add monuments, people, text, extra borders or crop. This is a section of a continuous panorama: left and right edges must exactly match the reference's positions and colors. Fine painted detail, not sharpening halos or photographic textures."
+    },
+    {
+      "key": "funeral-2",
+      "ref": "funeral-2-original.png",
+      "prompt": "Precisely redraw this game background section at high detail. Preserve EXACT camera, composition, all monument/gravestone/statue/building silhouettes, all their positions, tree outlines, lighting, palette and aspect ratio. Restore crisp hand-painted stone carvings, individual grass and leaves, atmospheric cloud brushwork. Eliminate pixelation, blurry enlarged pixels, straight tile seams and the thin accidental lines at top and bottom. Do not change scene design, add monuments, people, text, extra borders or crop. This is a section of a continuous panorama: left and right edges must exactly match the reference's positions and colors. Fine painted detail, not sharpening halos or photographic textures."
+    },
+    {
+      "key": "funeral-3",
+      "ref": "funeral-3-original.png",
+      "prompt": "Precisely redraw this game background section at high detail. Preserve EXACT camera, composition, all monument/gravestone/statue/building silhouettes, all their positions, tree outlines, lighting, palette and aspect ratio. Restore crisp hand-painted stone carvings, individual grass and leaves, atmospheric cloud brushwork. Eliminate pixelation, blurry enlarged pixels, straight tile seams and the thin accidental lines at top and bottom. Do not change scene design, add monuments, people, text, extra borders or crop. This is a section of a continuous panorama: left and right edges must exactly match the reference's positions and colors. Fine painted detail, not sharpening halos or photographic textures."
+    },
+    {
+      "key": "door",
+      "ref": "door-original.png",
+      "prompt": "Edit only the inner nearly black door panel in this game image so a CLOSED DOOR is clearly visible, not a black void. Preserve exact narrow perspective, outer metal frame, wooden wall, pipes and foreground cables. Inside the existing inner frame show dark charcoal painted metal door, faint warm reflected light, subtle inset panel detail and a small understated latch. Keep it dark but readable. No glow, no open doorway, no changes outside inner panel, no crop. Match the hand-painted industrial game style."
+    }
+  ],
+  "entrance": "Precisely redraw this opened industrial door game sprite. Preserve EXACT composition, door angle, perspective, silhouette, metal head sculpture/column positions, dark interior, right-hand closed door edge, and floor contours. Improve worn copper-painted door metal, rivets, sculpted dark metal highlights and pavement granularity. Keep original muted warm copper and cool purple lighting. No new ornaments, text, symbols, lights or objects. Do not close the open door. No borders, no crop. Strong hand-painted material detail consistent with a high quality remaster; floor must be finely textured continuously, not a gray flat patch."
+}
