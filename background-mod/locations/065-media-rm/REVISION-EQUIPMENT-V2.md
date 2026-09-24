@@ -6,4 +6,4 @@ Material-specific metal, cable and wood detail; original CHNK geometry and alpha
 
 Offline packing checks passed. Gameplay and all door/animation transitions remain unverified. Projector registered scenery overlays rebuilt with build_audited_overlays.py restricted to 066-projectr; conservative foreground exclusions remain.
 
-067-stage remains pending clarification of the requested projection-screen material.
+067-stage subsequently corrected to a smooth matte projection surface; see its REVISION-SCREEN-V2.md.
