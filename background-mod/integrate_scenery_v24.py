@@ -34,7 +34,11 @@ def door():
  paint=cv2.resize(raw,(190,665),interpolation=cv2.INTER_LANCZOS4)
  mask=np.zeros((665,190),np.uint8);cv2.fillPoly(mask,[np.array([(80,128),(133,151),(133,607),(80,570)],np.int32)],1)
  weight=np.minimum(cv2.distanceTransform(mask,cv2.DIST_L2,5)/3,1)[:,:,None]
- base[325:990,460:650]=np.rint(paint*weight+base[325:990,460:650]*(1-weight)).astype('uint8');Image.fromarray(base).save(dest)
+ base[325:990,460:650]=np.rint(paint*weight+base[325:990,460:650]*(1-weight)).astype('uint8')
+ Image.fromarray(base).save(folder/'closed-door-v24.png')
+ # Keep the OPEN doorway in the background; only the engine-controlled
+ # closed-door atlas receives the painted panel.
+ shutil.copy2(backup,dest)
  projector();fix('066-projectr')
  shutil.copy2(folder/'custom-v1/in-game-texture-preview.png',REV/'projector-door-packed.png')
 

@@ -4,6 +4,8 @@ The city sky and projector room retained original RGB in the two-pixel texture f
 
 The projector's narrow left door now has a readable dark panel and latch. All 18 projector state pieces were rebuilt from the updated artwork. This interprets the reported black-void door as the narrow door in the projector screenshot.
 
+Follow-up: the readable panel belongs only in the closed-door atlas sprite. The permanent room painting now retains the open doorway, so hiding that sprite when the woman appears reveals the opening. `closed-door-v24.png` holds the closed-state reference; `integrate_scenery_v24.py door` regenerates both correctly. The packed open/closed comparison is `reviews/seams-v24/door-state-comparison.png`; original atlas alpha remains unchanged. Runtime verification remains pending.
+
 The Corley entrance now uses the detailed closed-door painting and a redrawn open leaf. The open state uses its original geometry, original alpha and runtime Y offset of 148 scene pixels. Unchanged wall and pavement areas sample the shared background rather than carrying the old gray pavement rectangle.
 
 The funeral panorama is rebuilt at 7060 x 1200 from four registered, overlapping detailed paintings. This replaces the former small cropped image stretched across the entire panorama. The three 340-pixel overlaps blend continuously; texture filtering gutters are repaired after packing.

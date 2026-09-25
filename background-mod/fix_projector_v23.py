@@ -43,9 +43,12 @@ def main():
   x,y,w,h=rect;targets[page][y:y+h,x:x+w,:3]=np.uint8(np.clip(np.rint(rgb),0,255))
   editable[page][y:y+h,x:x+w]=originals[page][y:y+h,x:x+w,3]>0
   records.append(dict(page=page,rect=rect,scene=scene,kind=kind,**details))
- # Single closed-door overlay contains no animated foreground: use the exact
- # shared room painting over its original silhouette, including foreground cables.
- put(0,[1,1,377,1525],sample(new,377,1525,474,341),[474,341],'door')
+ # The room background is the OPEN doorway. The engine hides this separate
+ # closed-door overlay while the woman looks out. Never bake the closed panel
+ # into the base scene or it remains visible behind her during that state.
+ closed_path=folder/'closed-door-v24.png'
+ closed=np.array(Image.open(closed_path).convert('RGB').resize((2220,1200),Image.Resampling.LANCZOS)) if closed_path.exists() else new
+ put(0,[1,1,377,1525],sample(closed,377,1525,474,341),[474,341],'door')
  sheet=np.array(Image.open(REV/'reels-generated.png').convert('RGB').resize((2240,2304),Image.Resampling.LANCZOS))
  for i,(page,x,y) in enumerate(REELS):
   state=originals[page][y:y+1152,x:x+560,:3]
