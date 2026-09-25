@@ -28,7 +28,11 @@ Keep backups of local art and generated assets separately. Do not run all builde
 
 ## Validation and limitations
 
-The current local catalog contains 498 texture pairs. Builders check geometry, alpha and protected pixels; these checks do not establish visual correctness in every animation or save state. Some interactions still need gameplay review. The reported gas-tower cutscene freeze prompted a cache fix, but its in-game resolution remains unconfirmed.
+The current local catalog contains 594 texture pairs. Builders check geometry, alpha and protected pixels; these checks do not establish visual correctness in every animation or save state. Some interactions still need gameplay review. The reported gas-tower cutscene freeze prompted a cache fix, but its in-game resolution remains unconfirmed.
+
+## Installable release
+
+The separate Windows beta package includes a self-contained installer and launcher. Players do not need Python or the development files. See [player instructions](background-mod/RELEASE-README.md), [release build and validation](background-mod/RELEASE-BUILD.md), and [Mod DB listing text](background-mod/MODDB-DESCRIPTION.md). Release binaries and artwork remain outside this source-only repository.
 
 Legacy archive-patching commands are retained for history; the normal workflow is the live switcher. The switcher does not write to the game executable or archive. Launching it without `--prepare-only` starts the game.
 
