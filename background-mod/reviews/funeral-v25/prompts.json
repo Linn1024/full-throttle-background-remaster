@@ -1,0 +1,31 @@
+[
+  {
+    "key": "statue",
+    "prompt": "Edit target: this exact game background crop. Repair ONLY the stone woman's malformed hand on the LEFT holding the cross and her face. Sculpt a natural anatomically correct human hand: thumb on one side of cross shaft, four properly joined fingers wrapping the other side, believable wrist, no extra fingers or fused lumps. Face should be a serene, symmetrical solemn classical female stone sculpture with coherent eyes, nose, mouth, chin, no twisted grimace. Preserve exact pose, cross, hand and face locations, statue silhouette, scale, drapery, right hand, background, lighting and weathered stone palette. Match fine hand-painted game artwork, not a living woman. Leave all outside hand/face unchanged. No crop or borders.",
+    "refs": [
+      "C:/TEMP2/FT/Full Throttle Remastered/background-mod/reviews/funeral-v25/statue-before.png"
+    ]
+  },
+  {
+    "key": "bust",
+    "prompt": "Image 1 is the edit target. Image 2 is original game art, reference for facial-hair silhouette ONLY. Restore the bust's long narrow pointed Spanish goatee / imperial chin beard shown in image 2, visibly extending down from the chin, in addition to the existing curled moustache. The original pointed shape is a BEARD, not a necktie. Carve the beard in the same stone, with flowing sculpted hair detail, and preserve the original character. Preserve all other target details, exact pose, scale, face position, hair, clothes, base, background, light and palette. Local facial-hair edit only. No crop or border.",
+    "refs": [
+      "C:/TEMP2/FT/Full Throttle Remastered/background-mod/reviews/funeral-v25/bust-before.png",
+      "C:/TEMP2/FT/Full Throttle Remastered/background-mod/reviews/funeral-v25/bust-original.png"
+    ]
+  },
+  {
+    "key": "plaque",
+    "prompt": "Remove ONLY the strange floating shield/plaque immediately behind and to the right of the small stone urn in this exact game background crop. Replace that suspended shield shape with the continuous dark leafy background visible around it. Preserve the urn, its narrow pedestal, and the larger stone monument along the right edge exactly. No replacement ornament, floating object, new monument, support bar or text. Match existing painted dark foliage, color and lighting seamlessly. Exact composition and dimensions, no border or crop.",
+    "refs": [
+      "C:/TEMP2/FT/Full Throttle Remastered/background-mod/reviews/funeral-v25/plaque-before.png"
+    ]
+  },
+  {
+    "key": "coffin",
+    "prompt": "Edit this exact game background crop: the large foreground rectangular stone coffin/sarcophagus is BRAND NEW. Remove ALL plants, ivy, moss, lichen and growth from every part of the coffin, including its stepped lid, grooves, front, recessed panels and sides. Also remove large age cracks, broken chips and heavy weathering. Keep the same pale violet gray stone, fine clean stone grain, warm sunset edge light, exact rectangular design, steps and recessed front panels, exact perspective, proportions, silhouette and position. Clean newly made stone, not plastic and not ancient ruin. Preserve surrounding background leaves/grass outside the coffin exactly. No flowers, writing, added ornaments, crop or borders.",
+    "refs": [
+      "C:/TEMP2/FT/Full Throttle Remastered/background-mod/reviews/funeral-v25/coffin-before.png"
+    ]
+  }
+]
