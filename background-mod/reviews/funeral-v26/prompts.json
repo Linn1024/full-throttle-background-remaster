@@ -1,0 +1,4 @@
+{
+  "mode": "built-in imagegen",
+  "prompt": "Color grading ONLY. Image 1 is the exact funeral panorama to grade. Image 2 is the original game's lighting and color reference. Make image 1 moderately darker and closer to image 2: reduce the excessive golden/orange illumination on grass and stone, shift neutral stone shadows toward muted violet and cool purple, soften bright sunset highlights. Aim roughly 35 percent of the way from image 1 toward image 2, retaining readable detail rather than crushing everything black. Preserve every object, shape, position, texture, clean new coffin without plants, statue hand and face, pointed goatee, and absent floating plaque. Do not redraw, add objects, weathering, foliage, or change composition. Exact wide panorama framing. No white bars or borders."
+}
